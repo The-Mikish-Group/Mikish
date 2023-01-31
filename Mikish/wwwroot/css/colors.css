@@ -1,0 +1,426 @@
+/* #region Guideline Colors */
+/* #region Chocolate */
+.text-chocolate {
+    color: chocolate;
+}
+
+.bg-chocolate {
+    background-color: chocolate;
+}
+/* #endregion */
+/* #region White */
+.text-white {
+    color: #FFFFFF;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+/* #endregion */
+/* #region Blue */
+.text-blue-lighter {
+    color: #83D3EB;
+}
+
+.bg-blue-lighter {
+    background-color: #83D3EB;
+}
+
+.text-blue-light {
+    color: #50B8D4;
+}
+
+.bg-blue-light {
+    background-color: #50B8D4;
+}
+
+.text-blue {
+    color: #54A0BA;
+}
+
+.bg-blue {
+    background-color: #54A0BA;
+}
+
+.text-blue-dark {
+    color: #53819A;
+}
+
+.bg-blue-dark {
+    background-color: #53819A;
+}
+
+.text-blue-darker {
+    color: #214351;
+}
+
+.bg-blue-darker {
+    background-color: #214351;
+}
+/* #endregion */
+/* #region Green */
+.text-green-lighter {
+    color: #84CBA0;
+}
+
+.bg-green-lighter {
+    background-color: #84CBA0;
+}
+
+.text-green-light {
+    color: #5DBF8B;
+}
+
+.bg-green-light {
+    background-color: #5DBF8B;
+}
+
+.text-green {
+    color: #4DAF7C;
+}
+
+.bg-green {
+    background-color: #4DAF7C;
+}
+
+.text-green-dark {
+    color: #40996D;
+}
+
+.bg-green-dark {
+    background-color: #40996D;
+}
+
+.text-green-darker {
+    color: #265039;
+}
+
+.bg-green-darker {
+    background-color: #265039;
+}
+/* #endregion */
+/* #region Gray */
+.text-gray-lighter {
+    color: #DEDFE0;
+}
+
+.bg-gray-lighter {
+    background-color: #DEDFE0;
+}
+
+.text-gray-light {
+    color: #ABADB0;
+}
+
+.bg-gray-light {
+    background-color: #ABADB0;
+}
+
+.text-gray {
+    color: #7D7E81;
+}
+
+.bg-gray {
+    background-color: #7D7E81;
+}
+
+.text-gray-dark {
+    color: #4A4B4C;
+}
+
+.bg-gray-dark {
+    background-color: #4A4B4C;
+}
+
+.text-gray-darker {
+    color: #414042;
+}
+
+.bg-gray-darker {
+    background-color: #414042;
+}
+/* #endregion */
+/* #region Purple */
+.text-purple-lighter {
+    color: #A688BF;
+}
+
+.bg-purple-lighter {
+    background-color: #A688BF;
+}
+
+.text-purple-light {
+    color: #836AA3;
+}
+
+.bg-purple-light {
+    background-color: #836AA3;
+}
+
+.text-purple {
+    color: #695683;
+}
+
+.bg-purple {
+    background-color: #695683;
+}
+
+.text-purple-dark {
+    color: #57446C;
+}
+
+.bg-purple-dark {
+    background-color: #57446C;
+}
+
+.text-purple-darker {
+    color: #332940;
+}
+
+.bg-purple-darker {
+    background-color: #332940;
+}
+/* #endregion */
+/* #region Red */
+.text-red-light {
+    color: #F2644E;
+}
+
+.bg-red-light {
+    background-color: #F2644E;
+}
+
+.text-red {
+    color: #EF4237;
+}
+
+.bg-red {
+    background-color: #EF4237;
+}
+
+.text-red-dark {
+    color: #C72D27;
+}
+
+.bg-red-dark {
+    background-color: #C72D27;
+}
+/* #endregion */
+/* #region Orange */
+.text-orange-light {
+    color: #FBB042;
+}
+
+.bg-orange-light {
+    background-color: #FBB042;
+}
+
+.text-orange {
+    color: #F89626;
+}
+
+.bg-orange {
+    background-color: #F89626;
+}
+
+.text-orange-dark {
+    color: #F47B20;
+}
+
+.bg-orange-dark {
+    background-color: #F47B20;
+}
+/* #endregion */
+/* #region Yellow */
+.text-yellow-light {
+    color: #FAF06F;
+}
+
+.bg-yellow-light {
+    background-color: #FAF06F;
+}
+
+.text-yellow {
+    color: #F4D40F;
+}
+
+.bg-yellow {
+    background-color: #F4D40F;
+}
+
+.text-yellow-dark {
+    color: #E8BE1F;
+}
+
+.bg-yellow-dark {
+    background-color: #E8BE1F;
+}
+/* #endregion */
+/* #region Gold */
+.text-gold {
+    color: #8E774D;
+}
+
+.bg-gold {
+    background-color: #8E774D;
+}
+/* #endregion */
+/* #region Black-Seal */
+.text-black-seal {
+    color: #231F20;
+}
+
+.bg-black-seal {
+    background-color: #231F20;
+}
+/* #endregion */
+/* #endregion  */
+
+/* #region Resposive color changes */
+
+/* Responsive Link Hover and Active colors  in <a></a>*/
+a {
+    color: #414042 /* text-gray-darker */
+}
+
+    a:hover,
+    a:focus {
+        color: #7d7e81; /* text-gray */
+    }
+
+/* Responsive link colors (link class)*/
+.link {
+    color: #424143; /* almost black */
+}
+
+    .link:hover,
+    .link:active,
+    .link:focus {
+        color: #8e774d; /* text-gold */
+    }
+
+.link-white {
+    color: #ffffff;
+}
+
+    .link-white:hover,
+    .link-white:active,
+    .link-white:focus {
+        color: #40996d; /* green-dark */
+    }
+
+/*.navbar-text {
+    color: chocolate;*/ /* almost black */
+/*}
+
+.nav-text:hover {
+    color: darkgoldenrod;
+}
+
+
+.nav-link {
+    color: chocolate;*/ /* almost black */
+/*}
+
+    .nav-link:hover {
+        color: darkgoldenrod;
+    }*/
+
+.nav-pills .nav-link.active,
+.nav-pills.show > .nav-link {
+    color: #fff;
+    background-color: darkgray;
+    border-color: #1861ac;
+}
+
+/* Responsive Button Primary colors */
+.btn-primary {
+    color: white;
+    background-color: #000000; 
+    border-color: #414042; /* gray-darker */
+}
+
+    .btn-primary:focus,
+    .btn-primary:hover {
+        color: white;
+        background-color: #4a4b4c; 
+        border-color: #7d7e81; /* gray */
+    }
+
+/* Used in Gallery Group Auto Top function
+   Must be #ID : Used by JS document.getElementById */
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #C72D27; /* bg-red-dark*/
+    color: white;
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+
+    #top-button:hover {
+        background-color: #4A4B4C; /* bg-gray-dark */
+    }
+
+/* Responsive Card colors */
+
+/* Home Card Colors */
+.home-card-header-color {
+    background-color: #000000; 
+    color: white;
+}
+
+    .home-card-header-color:hover,
+    .home-card-header-color:focus {
+        border: solid;
+        border-width: thin;
+        border-color: black;
+        background-color: #ABADB0;
+        color: black;
+    }
+
+        .home-card-header-color:hover .home-card-footer-color,
+        .home-card-header-color:focus .home-card-footer-color {
+            background-color: #DEDFE0; /* bg-gray-lighter*/
+            transition: 1s ease-in-out;
+        }
+
+        .home-card-header-color:hover .btn-primary,
+        .home-card-header-color:focus .btn-primary {
+            color: white;
+            background-color: #000000; 
+            border-color: #7d7e81; /* gray */
+        }
+
+        .home-card-header-color:hover .image-dark-show,
+        .home-card-header-color:focus .image-dark-show {
+            display: inline-block;
+        }
+
+        .home-card-header-color:hover .image-light-show,
+        .home-card-header-color:focus .image-light-show {
+            display: none;
+        }
+
+.home-card-footer-color {
+    background-color: #ABADB0;
+    color: black;
+    transition: 1s ease-in-out;
+}
+
+.image-light-show {
+    display: inline-block;
+}
+
+.image-dark-show {
+    display: none;
+}
+
+/* #endregion */

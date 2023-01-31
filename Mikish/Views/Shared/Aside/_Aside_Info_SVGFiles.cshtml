@@ -1,0 +1,37 @@
+﻿<div style="padding: 15px;">
+    <p style="padding-left: 20px; color: black; font-size: 18px; font-weight: 400;">
+        Svg Image Files used on this site plus some.
+    </p>
+    <p>
+        This is our growing collection of colorful <b>SVG Files</b> for this website. Most, like the <b>Logo Files</b> are recreations of existing image themes (Company Logos), others are heavily edited existing files to suit our needs, and some, we've created specifically for this site. We do our creating and editing in <Button id="newTab" style="font-size: 16px; color:saddlebrown;" onclick="newTab('https://www.adobe.com/products/illustrator.html?promoid=PGRQQLFS&mv=other')">
+            Adobe Illustrator
+        </Button>.
+    </p>
+    <p>
+        <b>Why websites should use SVG graphics?</b>
+    </p>
+    <p>
+        When it comes to adding images to a website, the web designer either chooses raster or vector. A raster image is typically a photo made up of pixels with a set resolution. It loses quality when scaled up and can appear grainy.
+    </p>
+    <p>
+        Meanwhile, a vector image is made using lines, points and shapes. The web designer can scale it to any size without losing quality and still display a very crisp and clear image.
+    </p>    
+</div>
+
+<div class="rightAlign" id="show" style="margin-right: 15px;">
+    <p id="rightAlign" style="font-size: 10px;">
+        Archived on GitHub:
+        <button title="GitHub" id="newTab" onclick="newTab('https://github.com/The-Mikish-Group/Mikish/')">
+            <img style="height:16px; width:16px;" src="~/Content/Svg/Site/GitHub.svg" />
+        </button>
+    </p>
+</div>
+
+<br />
+
+<script>
+    $(document).ready(function () {
+        $("#hide").click(function () { $("#Info").hide(1000); $("#show").show(1000) });
+        $("#show").click(function () { $("#Info").show(1000); $("#show").hide(1000) });
+    });
+</script>

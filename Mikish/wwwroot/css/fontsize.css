@@ -1,0 +1,170 @@
+
+.italic {
+    font-style: italic;
+}
+
+/* #region Font Sizes (-fs) */
+footer {
+    font-size: 12px;
+    width: 100%;
+}
+.nav-link-fs {
+    font-size: 24px;    
+}
+.who-are-we-fs {
+    font-size: 18px;
+}
+.our-congregation-fs {
+    line-height: 1.3;
+    font-size: 15px;
+}
+.we-invite-you-fs {
+    font-size: 16px;
+}
+.card-body-text-fs {
+    font-size: 11px;
+}
+.hours-text-fs {
+    font-size: 12px;
+}
+.link-fs {
+    font-size: 16px;
+}
+/* #endregion */
+
+/* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Smaller tablets */
+@media (min-width: 575px) and (max-width: 768px) {
+        
+    .who-are-we-fs {
+        font-size: 36px;
+    }
+    .our-congregation-fs {
+        line-height: 1.3;
+        font-size: 21px;
+    }
+    .we-invite-you-fs {
+        font-size: 28px;
+    }
+    .nav-link-fs {
+        font-size: 18px;
+    }
+    .nav-text-fs {
+        font-size: 24px;
+    }
+    .footer-fs {
+        font-size: 14px;
+    }
+    .card-body-text-fs {
+        font-size: 16px;        
+    }
+    .hours-text-fs {
+        font-size: 16px;
+    }
+    .link-fs {
+        font-size: 20px;
+    }          
+}
+/* #endregion  */
+
+/* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
+@media (min-width: 768.01px) and (max-width: 991px) {
+
+    .footer-fs {
+        font-size: 22px;
+    }
+    .who-are-we-fs {
+        font-size: 36px;
+    }
+    .our-congregation-fs {
+        line-height: 1.3;
+        font-size: 21px;
+    }
+    .we-invite-you-fs {
+        font-size: 28px;
+    }    
+    .nav-link-fs {
+        font-size: 24px;
+    }
+    .nav-text-fs {
+        font-size: 24px;
+    }
+    .navbar-text-footer-fs {
+        font-size: 24px;
+    }
+    .card-body-text-fs {
+        font-size: 16px;
+       /* min-height: 62px;*/
+    }
+    .hours-text-fs {
+        font-size: 16px;
+    }  
+    .link-fs {
+        font-size: 16px;
+    }   
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+
+   .footer-fs {
+        font-size: 18px;
+    }
+    .who-are-we-fs {
+        font-size: 36px;
+    }
+    .our-congregation-fs {
+        line-height: 1.3;
+        font-size: 21px;
+    }
+    .we-invite-you-fs {
+        font-size: 28px;
+    }    
+    .nav-text-fs {
+        font-size: 24px;
+    }
+    .navbar-text-footer-fs {
+        font-size: 24px;
+    }
+    .nav-link-fs {
+        font-size: 20px;
+    }
+    .nav-link-footer-fs {
+        font-size: 20px;
+    }
+    .nav-link-footer-fs {
+        font-size: 20px;
+    }  
+    .card-body-text-fs {
+        font-size: 13px;
+    }
+    .hours-text-fs {
+        font-size: 12px;
+    }
+    .link-fs {
+        font-size: 20px;
+    }
+}
+/* #endregion*/
+
+/* #region (BS -lx- ) (min-width: 1200px) Medium Desktop*/
+@media (min-width: 1200px) {
+    .card-body-text-fs {
+        font-size: 16px;
+    }
+    .hours-text-fs {
+        font-size: 14px;
+    }
+}
+/* #endregion */
+
+/* #region (BS - xlg- ) (min-width: 1399.98px) Large Desktop */
+@media (min-width: 1399.98px) {
+    .card-body-text-fs {
+        font-size: 18px;
+    }
+    .hours-text-fs {
+        font-size: 16px;
+    }   
+}
+/* #endregion */

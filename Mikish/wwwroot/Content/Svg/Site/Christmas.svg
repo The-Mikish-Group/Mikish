@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Santa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="640px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+<g id="Background">
+	<path fill="#E8F1F1" d="M0,0h640c0,0,0,485.333,0,640c-640,0,0,0-640,0C0,453.333,0,0,0,0z"/>
+	<path fill="#CBE2E1" d="M0,0h640c0,0,0,413.866,0,568.533C560,561.066,474.667,624,311.467,624C229.985,624,96,592,0,581.333
+		C0,394.667,0,0,0,0z"/>
+	<path id="Sky" fill="#ACD3D3" d="M0,0h640c0,0,0,325.333,0,480c-148.609,37.331-196.254,88.533-320,88.533
+		c-81.481,0-235.459-55.98-320-61.866C0,320,0,0,0,0z"/>
+	
+		<linearGradient id="Sky_Gradient_1_" gradientUnits="userSpaceOnUse" x1="258.8301" y1="359.708" x2="774.313" y2="-19.6043" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#231F20"/>
+	</linearGradient>
+	<path id="Sky_Gradient" fill="url(#Sky_Gradient_1_)" d="M0,0h640c0,0,0,325.333,0,480c-148.609,37.331-196.254,88.533-320,88.533
+		c-81.481,0-235.459-55.98-320-61.866C0,320,0,0,0,0z"/>
+</g>
+<g id="Legs">
+	<path id="Leg_1_" fill="none" stroke="#633719" stroke-width="4" stroke-miterlimit="10" d="M138.395,450.395
+		c-2.911,34.588-1.873,41.383,4.208,72.834"/>
+	<path id="Leg" fill="none" stroke="#633719" stroke-width="4" stroke-miterlimit="10" d="M225.837,451.542
+		c-1.873,34.657-0.631,41.417,6.391,72.673"/>
+</g>
+<g id="Shoes">
+	
+		<linearGradient id="Shoe_2_" gradientUnits="userSpaceOnUse" x1="343.5996" y1="22.0576" x2="407.4619" y2="22.0576" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#F3402D"/>
+		<stop  offset="0.5" style="stop-color:#EC1C24"/>
+		<stop  offset="1" style="stop-color:#CF232A"/>
+	</linearGradient>
+	<path id="Shoe_1_" fill="url(#Shoe_2_)" d="M230.133,564.954c-14.127-7.064-11.379-50.133-11.379-50.133l36.979-2.489
+		c0,0-1.906,31.137,4.978,37.688c4.529,4.31,21.689,1.778,21.689,12.445C282.4,571.354,262.133,580.953,230.133,564.954z"/>
+	
+		<linearGradient id="Shoe_3_" gradientUnits="userSpaceOnUse" x1="438.1309" y1="23.7344" x2="501.8799" y2="23.7344" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#F3402D"/>
+		<stop  offset="0.5" style="stop-color:#EC1C24"/>
+		<stop  offset="1" style="stop-color:#CF232A"/>
+	</linearGradient>
+	<path id="Shoe" fill="url(#Shoe_3_)" d="M136.834,563.887c-14.705-5.76-12.611-49.065-12.611-49.065l36.979-2.489
+		c0,0-1.906,31.137,4.977,37.688c4.529,4.31,21.69,1.778,21.69,12.445C187.869,571.354,161.511,573.552,136.834,563.887z"/>
+</g>
+<g id="Arms">
+	<path id="Arm" fill="none" stroke="#633719" stroke-width="4" stroke-miterlimit="10" d="M304.445,288.334
+		c27.377,21.333,33.636,24.177,63.301,36.266"/>
+	<path id="Arm_1_" fill="none" stroke="#633719" stroke-width="4" stroke-miterlimit="10" d="M116.491,264.508
+		C80.443,274.82,52,297.852,36.042,331.193"/>
+</g>
+<path id="Shirt_Hem" fill="#FFFFFF" d="M307.467,420.6l8.355,39.819c0,0-84.088,4.267-133.688,4.267
+	c-68.979,0-146.092-4.267-146.092-4.267S35.88,429.072,52,428.066C122.044,423.697,307.467,420.6,307.467,420.6z"/>
+<linearGradient id="Shirt_1_" gradientUnits="userSpaceOnUse" x1="318.5332" y1="226.3223" x2="574" y2="226.3223" gradientTransform="matrix(-1 0 0 -1 626 565)">
+	<stop  offset="0" style="stop-color:#F3402D"/>
+	<stop  offset="0.5" style="stop-color:#EC1C24"/>
+	<stop  offset="1" style="stop-color:#CF232A"/>
+</linearGradient>
+<polygon id="Shirt" fill="url(#Shirt_1_)" points="282.4,278.394 119.455,249.289 52,428.066 307.467,420.6 "/>
+<g id="Buttons">
+	<g>
+		
+			<linearGradient id="Button_1_" gradientUnits="userSpaceOnUse" x1="430.7119" y1="216.7651" x2="446.3564" y2="216.7651" gradientTransform="matrix(-1 0 0 -1 626 565)">
+			<stop  offset="0" style="stop-color:#7D3825"/>
+			<stop  offset="0.5393" style="stop-color:#4F0000"/>
+			<stop  offset="1" style="stop-color:#2D0000"/>
+		</linearGradient>
+		<ellipse id="Button_17_" fill="url(#Button_1_)" cx="187.466" cy="348.234" rx="7.822" ry="5.156"/>
+		
+			<linearGradient id="Button_2_" gradientUnits="userSpaceOnUse" x1="431.7783" y1="199.3423" x2="447.0664" y2="199.3423" gradientTransform="matrix(-1 0 0 -1 626 565)">
+			<stop  offset="0" style="stop-color:#7D3825"/>
+			<stop  offset="0.5393" style="stop-color:#4F0000"/>
+			<stop  offset="1" style="stop-color:#2D0000"/>
+		</linearGradient>
+		<ellipse id="Button_16_" fill="url(#Button_2_)" cx="186.578" cy="365.658" rx="7.644" ry="5.511"/>
+	</g>
+</g>
+<g id="Head_1_">
+	<ellipse id="Head" fill="#FEBDA8" cx="180.246" cy="179.56" rx="63.754" ry="58.374"/>
+	
+		<linearGradient id="Head_Gradient_1_" gradientUnits="userSpaceOnUse" x1="382" y1="385.4404" x2="509.5078" y2="385.4404" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#FEBDA8"/>
+		<stop  offset="1" style="stop-color:#ED9284"/>
+	</linearGradient>
+	<ellipse id="Head_Gradient" fill="url(#Head_Gradient_1_)" cx="180.246" cy="179.56" rx="63.754" ry="58.374"/>
+	<g id="Cheek_Blush">
+		<ellipse id="Blush" fill="#ED9284" fill-opacity="0.5" cx="160.533" cy="191.211" rx="13.066" ry="11.267"/>
+		<ellipse id="Blush_1_" fill="#ED9284" fill-opacity="0.5" cx="227.133" cy="185.659" rx="13.067" ry="11.267"/>
+	</g>
+	<g id="Eyes">
+		<ellipse id="Eye_1_" fill="#662F1D" cx="227.133" cy="167.8" rx="5.534" ry="3.733"/>
+		<ellipse id="Eye" fill="#662F1D" cx="179.133" cy="167.8" rx="5.534" ry="3.733"/>
+	</g>
+</g>
+<linearGradient id="Glove_1_" gradientUnits="userSpaceOnUse" x1="571.293" y1="218.4189" x2="619.1025" y2="218.4189" gradientTransform="matrix(-1 0 0 -1 626 565)">
+	<stop  offset="0" style="stop-color:#F3402D"/>
+	<stop  offset="0.5" style="stop-color:#EC1C24"/>
+	<stop  offset="1" style="stop-color:#CF232A"/>
+</linearGradient>
+<path id="Glove" fill="url(#Glove_1_)" d="M52,331.329c-8.889,15.253,7.467,22.284,1.264,27.901
+	c-1.954,1.771-6.597,3.057-14.006-5.615c-7.227,14.306-8.93,18.345-25.303,12.109c-18.133-6.906,3.2-27.047,13.512-41.125
+	C45.6,325.277,40.267,326.376,52,331.329z"/>
+<linearGradient id="Glove_Inner_1_" gradientUnits="userSpaceOnUse" x1="234.1504" y1="233.6719" x2="268.9336" y2="233.6719" gradientTransform="matrix(-1 0 0 -1 626 565)">
+	<stop  offset="0" style="stop-color:#F3402D"/>
+	<stop  offset="0.5" style="stop-color:#EC1C24"/>
+	<stop  offset="1" style="stop-color:#CF232A"/>
+</linearGradient>
+<path id="Glove_Inner" fill="url(#Glove_Inner_1_)" d="M381.602,343.089c-0.756,0.945-2.703,2.845-3.912,2.845
+	c-6.021-0.006-20.623-12.445-20.623-12.445l12.445-16.711c0,0,18.868-0.821,21.688,3.912
+	C394.318,325.923,385.4,338.328,381.602,343.089z"/>
+<g id="Beard_1_">
+	<path id="Beard" fill="#FFFFFF" d="M181.599,326.732c-32.532-17.066-63.466-60.875-63.466-88c0-52.8,76.8-60.8,76.8-60.8
+		s60.801-10.134,91.733,45.333c16.503,29.592,20.8,59.2,32,117.333c3.566,18.516,26.667,38.934,26.667,38.934
+		S289.122,383.139,181.599,326.732z"/>
+	
+		<linearGradient id="Beard_Gradient_1_" gradientUnits="userSpaceOnUse" x1="506.4004" y1="121.6348" x2="383.6915" y2="277.64" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<path id="Beard_Gradient" fill="url(#Beard_Gradient_1_)" d="M181.599,326.732c-32.532-17.066-63.466-60.875-63.466-88
+		c0-52.8,76.8-60.8,76.8-60.8s60.801-10.134,91.733,45.333c16.503,29.592,20.8,59.2,32,117.333
+		c3.566,18.516,26.667,38.934,26.667,38.934S289.122,383.139,181.599,326.732z"/>
+</g>
+<path id="Mouth" fill="none" stroke="#633719" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M176.089,196.592
+	c9.6,13.51,25.244,0.954,25.244,2.133"/>
+<linearGradient id="Nose_1_" gradientUnits="userSpaceOnUse" x1="413.4668" y1="382.2666" x2="448.0234" y2="382.2666" gradientTransform="matrix(-1 0 0 -1 626 565)">
+	<stop  offset="0" style="stop-color:#F3402D"/>
+	<stop  offset="0.5" style="stop-color:#EC1C24"/>
+	<stop  offset="1" style="stop-color:#CF232A"/>
+</linearGradient>
+<ellipse id="Nose" fill="url(#Nose_1_)" cx="195.255" cy="182.733" rx="17.278" ry="11.2"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="151.5996" y1="170.1191" x2="343.5996" y2="170.1191" gradientTransform="matrix(-1 0 0 -1 626 565)">
+	<stop  offset="0" style="stop-color:#7D3825"/>
+	<stop  offset="0.5393" style="stop-color:#4F0000"/>
+	<stop  offset="1" style="stop-color:#2D0000"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M397.79,348.094c1.929-12.902,45.677-42.694,45.677-42.694L410.4,291.533
+	c0,0-29.867,27.732-29.867,54.4C282.4,391.799,282.4,492.066,282.4,492.066s89.6,13.866,192,0
+	C465.908,454.361,465.867,411,397.79,348.094z"/>
+<g id="Stars">
+	<polygon id="Star_4_" fill="#FFFFFF" points="364.479,412.834 354.578,408.155 367.911,406.2 368.623,395.355 379.016,402.967 
+		387.645,398.021 386.756,407.089 399.021,407.622 389.6,414.741 397.6,422.556 382.039,422.106 378.37,433.332 371.939,419.878 
+		359.557,423.832 	"/>
+	<polygon id="Star_3_" fill="#FFFFFF" points="328.623,434.288 319.557,428.778 328.932,428.815 330.072,419.671 336.859,425.045 
+		345.512,420.955 344.8,428.245 354.578,429.845 345.512,433.332 349.777,440.866 341.066,439.444 338.044,447.089 332,438.866 
+		322.756,441.222 	"/>
+	<polygon id="Star_2_" fill="#FFFFFF" points="355.408,466.302 346.341,460.792 355.717,460.829 356.857,451.685 363.645,457.059 
+		371.289,453.845 371.585,460.259 381.363,461.858 372.296,465.346 376.563,472.88 367.852,471.458 364.83,479.103 358.785,470.88 
+		349.541,473.235 	"/>
+	<polygon id="Star_1_" fill="#FFFFFF" points="417.174,421.865 408.107,416.355 417.482,416.393 418.625,407.248 425.412,412.622 
+		433.057,409.408 433.352,415.822 443.13,417.422 434.063,420.909 438.33,428.443 429.619,427.021 426.596,434.666 420.552,426.443 
+		411.309,428.799 	"/>
+	<polygon id="Star" fill="#FFFFFF" points="413.281,454.892 405.574,451.356 413.59,449.419 414.73,440.274 421.518,445.647 
+		429.163,442.435 429.459,448.848 437.299,450.131 430.17,453.936 434.438,461.47 425.727,460.048 421.066,468.422 416.658,459.47 
+		407.415,461.825 	"/>
+</g>
+<g id="Stars_Gradient">
+	
+		<linearGradient id="Star_10_" gradientUnits="userSpaceOnUse" x1="291.8726" y1="136.0962" x2="250.1874" y2="151.5121" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="Star_9_" fill="url(#Star_10_)" points="364.479,412.834 354.578,408.155 367.911,406.2 368.623,395.355 
+		379.016,402.967 387.645,398.021 386.756,407.089 399.021,407.622 389.6,414.741 397.6,422.556 382.039,422.106 378.37,433.332 
+		371.939,419.878 359.557,423.832 	"/>
+	
+		<linearGradient id="Star_11_" gradientUnits="userSpaceOnUse" x1="312.1812" y1="121.1445" x2="281.0773" y2="137.2427" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="Star_8_" fill="url(#Star_11_)" points="328.623,434.288 319.557,428.778 328.932,428.815 330.072,419.671 
+		336.859,425.045 345.512,420.955 344.8,428.245 354.578,429.845 345.512,433.332 349.777,440.866 341.066,439.444 338.044,447.089 
+		332,438.866 322.756,441.222 	"/>
+	
+		<linearGradient id="Star_12_" gradientUnits="userSpaceOnUse" x1="289.1802" y1="83.542" x2="259.7037" y2="102.4544" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="Star_7_" fill="url(#Star_12_)" points="355.408,466.302 346.341,460.792 355.717,460.829 356.857,451.685 
+		363.645,457.059 371.289,453.845 371.585,460.259 381.363,461.858 372.296,465.346 376.563,472.88 367.852,471.458 364.83,479.103 
+		358.785,470.88 349.541,473.235 	"/>
+	
+		<linearGradient id="Star_13_" gradientUnits="userSpaceOnUse" x1="233.4834" y1="128.9907" x2="202.1604" y2="144.6591" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="Star_6_" fill="url(#Star_13_)" points="417.174,421.865 408.107,416.355 417.482,416.393 418.625,407.248 
+		425.412,412.622 433.057,409.408 433.352,415.822 443.13,417.422 434.063,420.909 438.33,428.443 429.619,427.021 426.596,434.666 
+		420.552,426.443 411.309,428.799 	"/>
+	
+		<linearGradient id="Star_14_" gradientUnits="userSpaceOnUse" x1="232.4502" y1="94.0815" x2="205.8013" y2="111.2941" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<polygon id="Star_5_" fill="url(#Star_14_)" points="413.281,454.892 405.574,451.356 413.59,449.419 414.73,440.274 
+		421.518,445.647 429.163,442.435 429.459,448.848 437.299,450.131 430.17,453.936 434.438,461.47 425.727,460.048 421.066,468.422 
+		416.658,459.47 407.415,461.825 	"/>
+</g>
+<g id="Bag_Tie">
+	<path fill="none" stroke="#F3402D" stroke-width="4" stroke-miterlimit="10" d="M418.229,355
+		c24.555,11.141,33.095,23.708,29.194,29.244c-3.899,5.533-18.978,4.178-33.823-12.71c-17.815-20.267-19.451-28.015-16.188-27.185
+		C403.645,345.934,397.795,345.729,418.229,355z"/>
+	<path fill="none" stroke="#F3402D" stroke-width="4" stroke-miterlimit="10" d="M439.378,333.134
+		c26.489-5.334,40.711,0.334,40.711,7.502c0,7.166-14.493,17.031-36.978,17.031s-39.467-4.567-39.467-11.733
+		C403.645,338.766,417.335,337.57,439.378,333.134z"/>
+	<path fill="none" stroke="#F3402D" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M338.081,372.357
+		c29.665,5.221,59.331-12.528,59.331-28.008"/>
+	<path fill="none" stroke="#F3402D" stroke-width="4" stroke-miterlimit="10" d="M378.045,344.29
+		c10.709,1.644,19.367,0.026,19.367,0.06"/>
+</g>
+<g id="Hat_1_">
+	
+		<linearGradient id="Glove_Outer_1_" gradientUnits="userSpaceOnUse" x1="210.6099" y1="226.6577" x2="237.2461" y2="226.6577" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#F3402D"/>
+		<stop  offset="0.5" style="stop-color:#EC1C24"/>
+		<stop  offset="1" style="stop-color:#CF232A"/>
+	</linearGradient>
+	<path id="Glove_Outer" fill="url(#Glove_Outer_1_)" d="M410.671,324.43c5.616,3.471,6.32,12.514,1.571,20.197
+		c-4.749,7.686-13.152,11.1-18.77,7.628c-5.615-3.471-6.32-12.514-1.57-20.198C396.65,324.373,405.055,320.958,410.671,324.43z"/>
+	
+		<linearGradient id="Hat_Ball_1_" gradientUnits="userSpaceOnUse" x1="297.7324" y1="492.1328" x2="339.333" y2="492.1328" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#F3402D"/>
+		<stop  offset="0.5" style="stop-color:#EC1C24"/>
+		<stop  offset="1" style="stop-color:#CF232A"/>
+	</linearGradient>
+	<ellipse id="Hat_Ball" fill="url(#Hat_Ball_1_)" cx="307.467" cy="72.867" rx="20.8" ry="16"/>
+	
+		<linearGradient id="Hat_2_" gradientUnits="userSpaceOnUse" x1="334.5293" y1="456.5752" x2="507.8662" y2="456.5752" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#F3402D"/>
+		<stop  offset="0.5" style="stop-color:#EC1C24"/>
+		<stop  offset="1" style="stop-color:#CF232A"/>
+	</linearGradient>
+	<path id="Hat" fill="url(#Hat_2_)" d="M290.4,78.734c-21.867,4.8-50.682,39.851-46.4,63.467
+		c-52.097-3.79-87.467-7.467-125.866,2.133C132,63.267,286.667,72.867,286.667,72.867S294.199,77.899,290.4,78.734z"/>
+	<path id="Hat_Brim" fill="#FFFFFF" d="M118.134,144.333c-9.225,2.129-19.2,19.2-2.667,37.867
+		c52.586-19.428,64.248-26.142,125.866-19.2c4.554-4.733,9.162-19.828,2.667-20.8C204.802,136.333,166.667,133.133,118.134,144.333z
+		"/>
+	
+		<linearGradient id="Hat_Brim_Gradient_1_" gradientUnits="userSpaceOnUse" x1="579.9082" y1="329.6094" x2="460.072" y2="403.179" gradientTransform="matrix(-1 0 0 -1 626 565)">
+		<stop  offset="0" style="stop-color:#231F20"/>
+		<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+	</linearGradient>
+	<path id="Hat_Brim_Gradient" fill="url(#Hat_Brim_Gradient_1_)" d="M118.134,144.333c-9.225,2.129-19.2,19.2-2.667,37.867
+		c52.586-19.428,64.248-26.142,125.866-19.2c4.554-4.733,9.162-19.828,2.667-20.8C204.802,136.333,166.667,133.133,118.134,144.333z
+		"/>
+</g>
+<linearGradient id="Shirt_Hem_Gradient_1_" gradientUnits="userSpaceOnUse" x1="642.8584" y1="-54.3877" x2="432.8638" y2="130.4892" gradientTransform="matrix(-1 0 0 -1 626 565)">
+	<stop  offset="0" style="stop-color:#231F20"/>
+	<stop  offset="1" style="stop-color:#231F20;stop-opacity:0"/>
+</linearGradient>
+<path id="Shirt_Hem_Gradient" fill="url(#Shirt_Hem_Gradient_1_)" d="M307.467,420.6l8.355,39.819c0,0-84.088,4.267-133.688,4.267
+	c-68.979,0-146.092-4.267-146.092-4.267S35.88,429.072,52,428.066C122.044,423.697,307.467,420.6,307.467,420.6z"/>
+</svg>

@@ -1,0 +1,134 @@
+/* #region my-card */
+.my-card {
+    border-radius: 6px;
+    border: solid;
+    border-width: 1px;
+    border-color: #84CBA0;
+}
+.my-card-header {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;    
+}
+.my-card-contact-header {
+    border-radius: 0;
+}
+.my-card-body {
+    border-radius: 0;
+}
+.my-card-footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.my-card-contact-footer-gray-light {
+    border-radius: 0;
+    background-color: #4a4b4c; /* bg-gray-light */
+    color: white;
+}
+.my-card-contact-footer-gold {
+    border-radius: 0;    
+    background-color: #8e774d; /* bg-gold */
+    color: white;
+}
+.my-card-radius {
+    border-radius: 0;
+    border-width: 0;
+}
+
+.my-card-plain {
+    border-radius: 0;
+    border-width: 0;
+    border: none;
+    border-width: 0;
+    border-color: transparent;
+}
+
+.my-rounded {
+    border-radius: 0;
+}
+
+/* #endregion */
+
+/* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Smaller tablets */
+@media (min-width: 575px) and (max-width: 768px) {
+    .my-rounded {
+        border-radius: 0;
+    }
+}
+/* #endregion  */
+
+/* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
+@media (min-width: 768.01px) and (max-width: 991px) {
+
+    /* #region my-card */
+    .my-card-contact-header {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .my-card-contact-footer-gray-light {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .my-card-contact-footer-gold {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .my-card-radius {
+        border-radius: 6px;
+        border-width: 1px;
+    }
+
+    .my-rounded {
+        border-radius: 6px;
+    }
+    /* #endregion */    
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {    
+
+    /* #region my-card */
+    .my-card-contact-header {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .my-card-contact-footer-gray-light {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .my-card-contact-footer-gold {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .my-card-radius {
+        border-radius: 6px;
+        border-width: 1px;
+    }
+    /* #endregion */
+
+    .my-rounded {
+        border-radius: 6px;
+    }
+
+}
+/* #endregion*/
+
+/* #region (BS -lx- ) (min-width: 1200px) Medium Desktop*/
+@media (min-width: 1200px) {
+    
+}
+/* #endregion */
+
+/* #region (BS - xlg- ) (min-width: 1399.98px) Large Desktop */
+@media (min-width: 1399.98px) {
+    
+}
+/* #endregion */

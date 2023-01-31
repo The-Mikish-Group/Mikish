@@ -1,0 +1,10 @@
+﻿@{
+    int imageCount = Directory.GetFiles("wwwroot/content/Pictures/countdowns/", "*" + ".jpg").Length;
+}
+
+<div style="padding: 15px;">
+    <h4>About Event Countdowns...</h4>
+    <p style="padding: 15px 0 0 20px; color: black; font-size: 18px; font-weight: 400;">
+        A collection of @imageCount Calendar Countdowns including Seasons, Holidays, and Birthdays.
+    </p>
+</div>

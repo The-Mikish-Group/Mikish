@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1"
+	 id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="640px" height="640px" viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#2E4E73;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#355388;}
+	.st3{fill:#3B5999;}
+]]>
+</style>
+<path id="Background_Circle" class="st3" d="M319.46,39.348c154.62,0,279.96,125.34,279.96,279.95
+	c0,154.62-125.34,279.96-279.96,279.96S39.5,473.918,39.5,319.298C39.5,164.688,164.84,39.348,319.46,39.348z"/>
+<path id="Shadow_Diagonal" class="st2" d="M517.51,121.76c109.311,109.32,109.33,286.59-0.02,395.92
+	c-109.33,109.33-286.58,109.33-395.91,0L517.51,121.76z"/>
+<path id="Shadow_RB" class="st0" d="M597.6,350.82l-202.5-202.5L289.96,253.45l6.27,6.27l-59.861,59.852l48.99,48.999l-6.442,6.443
+	l53.045,53.035l-61.156,61.165l104.47,104.46c117.79-23.832,208.75-121.64,222.319-242.859L597.6,350.82z"/>
+<path id="f" class="st1" d="M270.53,215.3v46.948h-34.389v57.417h34.389v170.59h70.656v-170.59h47.418
+	c0,0,4.448-27.534,6.597-57.618h-53.745c0,0,0-33.411,0-39.259c0-5.868,7.708-13.758,15.32-13.758h38.502v-59.775h-52.347
+	C268.785,149.255,270.53,206.72,270.53,215.3L270.53,215.3z"/>
+</svg>

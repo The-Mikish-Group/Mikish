@@ -1,0 +1,286 @@
+﻿@{
+    string eventName = ViewBag.Message;
+
+    // Assign Svg files to floaters (Defaults to Snowflakes - Winter)
+    string floater1 = "../Content/Svg/Site/Snowflake1.svg";
+    string floater2 = "../Content/Svg/Site/Snowflake2.svg";
+    string floater3 = "../Content/Svg/Site/Snowflake3.svg";
+    string floater4 = "../Content/Svg/Site/Snowflake5.svg";
+
+    // "sizeFactor" is used to increase or decrease overall size of floaters for each eventName
+    int sizeFactor = 40;
+    int floaterCount = 8;
+
+    // Assign Svg files to floaters based on "eventName"
+    if (eventName == "Christmas") {
+        floater1 = "../Content/Svg/Site/Elf1.svg";
+        floater2 = "../Content/Svg/Site/Santa1.svg";
+        floater3 = "../Content/Svg/Site/Elf2.svg";
+        floater4 = "../Content/Svg/Site/Santa2.svg";
+        sizeFactor = 100;
+        floaterCount = 6; 
+    }
+
+    if (eventName == "Autumn") {
+        floater1 = "../Content/Svg/Site/Autumn1.svg";
+        floater2 = "../Content/Svg/Site/Autumn2.svg";
+        floater3 = "../Content/Svg/Site/Autumn3.svg";
+        floater4 = "../Content/Svg/Site/Autumn4.svg";
+        sizeFactor = 40;
+        floaterCount = 12;
+    }
+
+    if (eventName == "Halloween") {
+        floater1 = "../Content/Svg/Site/Bat1.svg";
+        floater2 = "../Content/Svg/Site/Bat2.svg";
+        floater3 = "../Content/Svg/Site/Bat3.svg";
+        floater4 = "../Content/Svg/Site/Bat4.svg";
+        sizeFactor = 120;
+        floaterCount = 12;
+    }
+
+    if (eventName == "Valentines") {
+        floater1 = "../Content/Svg/Site/Heart1.svg";
+        floater2 = "../Content/Svg/Site/Heart2.svg";
+        floater3 = "../Content/Svg/Site/Heart3.svg";
+        floater4 = "../Content/Svg/Site/Heart3.svg";
+        sizeFactor = 50;
+        floaterCount = 10;
+    }
+
+    if (eventName == "Easter") {
+        floater1 = "../Content/Svg/Site/Egg1.svg";
+        floater2 = "../Content/Svg/Site/Egg2.svg";
+        floater3 = "../Content/Svg/Site/Egg3.svg";
+        floater4 = "../Content/Svg/Site/Egg4.svg";
+        sizeFactor = 75;
+        floaterCount = 8;
+    }
+
+    if (eventName == "Thanksgiving") {
+        floater1 = "../Content/Svg/Site/Pumpkin.svg";
+        floater2 = "../Content/Svg/Site/Turkey.svg";
+        floater3 = "../Content/Svg/Site/Pumpkin.svg";
+        floater4 = "../Content/Svg/Site/Turkey.svg";
+        sizeFactor = 60;
+        floaterCount = 8;
+    }
+
+}
+
+<!-- Floater code adapted from "The Falling Snow Effect"
+    https://www.kirupa.com/html5/the_falling_snow_effect.htm
+    Added multiple floaters and overall size factoring per event name. -->
+
+<div id="floatercontainer">
+    <img class="floater1" src="@floater1" />
+    <img class="floater2" src="@floater2" />
+    <img class="floater3" src="@floater3" />
+    <img class="floater4" src="@floater4" />
+</div>
+
+<script>
+
+   // The start of animation
+    var requestAnimationFrame = window.requestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.msRequestAnimationFrame;
+
+    var transforms = ["transform",
+        "msTransform",
+        "webkitTransform",
+        "mozTransform",
+        "oTransform"];
+
+    var transformProperty = getSupportedPropertyName(transforms);
+
+    // Array to store our floater objects
+    var floaters = [];
+
+    // Global variables to store our browser's window size
+    var browserWidth;
+    var browserHeight;
+
+    // Specify the number of *total of each floater* you want visible
+    var floaterCount = @floaterCount;
+
+    // Flag to reset the position of the floaters
+    var resetPosition = false;           
+   
+    // It all starts here...
+    function setup() {
+        window.addEventListener("DOMContentLoaded", generateFloaters, false);
+        window.addEventListener("resize", setResetFlag, false);
+    }
+    setup();
+
+    // Prefix management
+    function getSupportedPropertyName(properties) {
+        for (var i = 0; i < properties.length; i++) {
+            if (typeof document.body.style[properties[i]] != "undefined") {
+                return properties[i];
+            }
+        }
+        return null;
+    }
+
+    // Constructor for our floater objects
+    function Floater(element, speed, xPos, yPos) {
+
+        // set initial floater properties
+        this.element = element;
+        this.speed = speed;
+        this.xPos = xPos;
+        this.yPos = yPos;
+
+        // declare variables used for floater's motion
+        this.counter = 0;
+        this.sign = Math.random() < 0.5 ? 1 : -1;
+
+        // Use the commented out settings when using a text character for the floater
+        // // setting an initial opacity and size for our floater
+        // // this.element.style.opacity = .1 + Math.random();
+        // // this.element.style.fontSize = 12 + Math.random() * 50 + "px";
+
+        // Adjust Svg size and Opacity
+        this.element.style.opacity = .2 + Math.random();
+        var svgSize = 12 + Math.random() * @sizeFactor + "px";
+        this.element.style.width = svgSize;
+        this.element.style.height = svgSize;
+    }
+
+    // The function responsible for actually moving our floaters
+    Floater.prototype.update = function () {
+
+        // using some trigonometry to determine our x and y position
+        this.counter += this.speed / 5000;
+        this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+        this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+
+        // setting our floater's position
+        setTranslate3DTransform(this.element, Math.round(this.xPos), Math.round(this.yPos));
+
+        // if floater goes below the browser window, move it back to the top
+        if (this.yPos > browserHeight) {
+            this.yPos = -50;
+        }
+    }
+
+    // Set your floater's position
+    function setTranslate3DTransform(element, xPosition, yPosition) {
+        var val = "translate3d(" + xPosition + "px, " + yPosition + "px" + ", 0)";
+        element.style[transformProperty] = val;
+    }
+
+    // The function responsible for creating the floater
+    function generateFloaters() {
+
+        // get our floater element from the DOM and store it
+        var originalFloater1 = document.querySelector(".floater1");
+        var originalFloater2 = document.querySelector(".floater2");
+        var originalFloater3 = document.querySelector(".floater3");
+        var originalFloater4 = document.querySelector(".floater4");
+
+        // access our floater element's parent container
+        var floaterContainer1 = originalFloater1.parentNode;
+        var floaterContainer2 = originalFloater2.parentNode;
+        var floaterContainer3 = originalFloater3.parentNode;
+        var floaterContainer4 = originalFloater4.parentNode;
+
+        // get our browser's size
+        browserWidth = document.documentElement.clientWidth;
+        browserHeight = document.documentElement.clientHeight;
+
+        // create each individual floater
+        for (var i = 0; i < floaterCount; i++) {
+
+            // clone our original floaters and add to floaterContainer
+            var floaterClone1 = originalFloater1.cloneNode(true);
+            var floaterClone2 = originalFloater2.cloneNode(true);
+            var floaterClone3 = originalFloater3.cloneNode(true);
+            var floaterClone4 = originalFloater4.cloneNode(true);
+
+            floaterContainer1.appendChild(floaterClone1);
+            floaterContainer2.appendChild(floaterClone2);
+            floaterContainer3.appendChild(floaterClone3);
+            floaterContainer4.appendChild(floaterClone4);
+
+            // set our floater's initial position and related properties
+            var initialXPos = getPosition(50, browserWidth);
+            var initialYPos = getPosition(50, browserHeight);
+            var speed1 = 5 + Math.random() * 40;
+            var speed2 = 5 + Math.random() * 40;
+            var speed3 = 5 + Math.random() * 40;
+            var speed4 = 5 + Math.random() * 40;
+
+            // create our floater objects
+            var floaterObject1 = new Floater(floaterClone1,
+                speed1,
+                initialXPos,
+                initialYPos);
+            var floaterObject2 = new Floater(floaterClone2,
+                speed2,
+                initialXPos,
+                initialYPos);
+            var floaterObject3 = new Floater(floaterClone3,
+                speed3,
+                initialXPos,
+                initialYPos);
+            var floaterObject4 = new Floater(floaterClone4,
+                speed4,
+                initialXPos,
+                initialYPos);
+
+            floaters.push(floaterObject1);
+            floaters.push(floaterObject2);
+            floaters.push(floaterObject3);
+            floaters.push(floaterObject4);
+        }
+
+        // remove the original floaters because we no longer need them visible
+        floaterContainer1.removeChild(originalFloater1);
+        floaterContainer2.removeChild(originalFloater2);
+        floaterContainer3.removeChild(originalFloater3);
+        floaterContainer4.removeChild(originalFloater4);
+
+        // call the moveFloaters function every 30 milliseconds
+        moveFloaters();
+    }
+
+    // Responsible for moving each floater by calling its update function
+    function moveFloaters() {
+        for (var i = 0; i < floaters.length; i++) {
+            var floater = floaters[i];
+            floater.update();
+        }
+
+        // Reset the position of all the floaters to a new value
+        if (resetPosition) {
+            browserWidth = document.documentElement.clientWidth;
+            browserHeight = document.documentElement.clientHeight;
+
+            for (var i = 0; i < floaters.length; i++) {
+                var floater = floaters[i];
+
+                floater.xPos = getPosition(50, browserWidth);
+                floater.yPos = getPosition(50, browserHeight);
+            }
+
+            resetPosition = false;
+        }
+
+        requestAnimationFrame(moveFloaters);
+    }
+
+    // This function returns a number between (maximum - offset) and (maximum + offset)
+    function getPosition(offset, size) {
+        return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+    }
+
+     // Trigger a reset of all the floaters' positions
+    function setResetFlag(e) {
+        resetPosition = true;
+    }
+
+</script>

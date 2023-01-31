@@ -1,0 +1,845 @@
+﻿@{
+    string siteName = SiteHelpers.siteName();
+    string siteNameShort = siteName;
+    string siteURL = SiteHelpers.siteURL();
+    string asideContent = SiteHelpers.siteAboutSide();
+
+    // Overall Organization
+    string siteOrganization = "The Mikish Group";
+
+    // Set default values
+    string pageTitle = ViewBag.Message + " | " + siteNameShort;
+    string description = "Enjoying Life!";
+    string folder = "";
+
+    string pageShareFolder = siteURL + "/Content/PageShares/";
+    string pageShareImage = "BlueSun.png";
+    string pageShareImageHeight = "300";
+    string pageShareImageWidth = "300";
+
+    string msg = ViewBag.Message.Replace(" ", "");
+
+    switch (ViewBag.Message)
+    {
+        #region Info
+        case "About":
+            {
+                description = "Enjoying Life!";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+                break;
+            }
+
+        case "Contact":
+            {
+                pageTitle = "Contact Us" + " | " + siteNameShort;
+                folder = "/Info/Contact/";
+                description = "Reach out and and we'll respond!";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+                break;
+            }
+
+        case "Privacy":
+            {
+                pageTitle = "Privacy Policy" + " | " + siteNameShort;
+                folder = "/Info/Privacy";
+                description = "Privacy Policy";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+                break;
+            }
+
+        case "TOS":
+            {
+                pageTitle = "Terms of Service" + " | " + siteNameShort;
+                folder = "/Info/TOS";
+                description = "Terms of Service";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+                break;
+            }
+
+        case "Links":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Info/Links";
+                asideContent = "Aside/_Aside_Links";
+                description = "More Links";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+                break;
+            }
+
+        case "EventsMenu":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until... Countdowns!";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+
+                break;
+            }
+
+        case "SvgFiles":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Info/SvgFiles";
+                asideContent = "Aside/_Aside_Info_SVGFiles";
+                description = "SVG Collection";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+                break;
+            }
+        #endregion
+        #region Photos
+        case "Photos":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/Photos";
+                asideContent = "Aside/_Aside_Photos";
+
+                description = "Our Photos!";
+                pageShareImage = "BlueSun.png";
+                pageShareImageHeight = "300";
+                pageShareImageWidth = "300";
+
+                break;
+            }
+
+        case "Sunsets":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Photos_" + msg;
+
+                description = "Beautiful Sunsets!";
+                pageShareImage = "Sunsets.jpg";
+                pageShareImageHeight = "1360";
+                pageShareImageWidth = "1360";
+
+                break;
+            }
+
+        case "Wildlife":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Photos_" + msg;
+
+                description = "Interesting Wildlife";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Fishing":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Photos_" + msg;
+
+                description = "Fishing at the Lake";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "1360";
+                pageShareImageWidth = "2048";
+
+                break;
+            }
+
+        case "ScentMe":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Photos_" + msg;
+
+                description = "Old  Scentme Images";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "500";
+                pageShareImageWidth = "670";
+
+                break;
+            }
+        #endregion
+        #region Humor
+        case "Humor":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/Humor";
+                asideContent = "Aside/_Aside_Humor";
+
+                description = "Add some Humor to your life!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Cartoons":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Humor_" + msg;
+
+                description = "Cartoons from the InterWebs!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Memes":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Humor_" + msg;
+
+                description = "Memes from Bridet!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Jokes":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Humor_" + msg;
+
+                description = "Memes from The Old Jokes Home!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "500";
+                pageShareImageWidth = "500";
+
+                break;
+            }
+
+        #endregion
+        #region Seasons
+        case "Spring":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Season_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Summer":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Season_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Autumn":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Season_" + msg;
+
+                description = "Days until Autumn (Fall)!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "1360";
+                pageShareImageWidth = "1360";
+
+                break;
+            }
+
+        case "Winter":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Season_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+        #endregion
+        #region Hollidays
+        case "NewYears":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "MartinLutherKing":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Valentines":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "1600";
+                pageShareImageWidth = "1600";
+
+                break;
+            }
+
+        case "Presidents":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Easter":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Mothers":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Memorial":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Fathers":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Independence":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Labor":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Veterans":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Halloween":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Thanksgiving":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Christmas":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Events_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+        #endregion
+        #region Birthdays
+        case "Army":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Navy":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "AirForce":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "MarineCorp":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "NationalGuard":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Jefferson":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Washington":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+
+        case "Lincoln":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Countdowns/" + msg;
+                asideContent = "Aside/_Aside_Birthday_" + msg;
+
+                description = "Days until " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "600";
+                pageShareImageWidth = "600";
+
+                break;
+            }
+        #endregion
+        #region Snow Examples
+        case "Snow1":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Images_" + msg;
+
+                description = "Anamation Example: " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "2220";
+                pageShareImageWidth = "2550";
+
+                break;
+            }
+
+        case "Snow2":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Images_" + msg;
+
+                description = "Anamation Example: " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "2220";
+                pageShareImageWidth = "2550";
+
+                break;
+            }
+
+        case "Snow3":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Images_" + msg;
+
+                description = "Anamation Example: " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "2220";
+                pageShareImageWidth = "2550";
+
+                break;
+            }
+
+        case "Snow4":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Images_" + msg;
+
+                description = "Anamation Example: " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "2220";
+                pageShareImageWidth = "2550";
+
+                break;
+            }
+
+        case "Snow5":
+            {
+                pageTitle = msg + " | " + siteNameShort;
+                folder = "/Pictures/" + msg;
+                asideContent = "Aside/_Aside_Images_" + msg;
+
+                description = "Anamation Example: " + msg + "!";
+                pageShareImage = msg + ".jpg";
+                pageShareImageHeight = "2220";
+                pageShareImageWidth = "2550";
+
+                break;
+            }
+            #endregion
+    }
+
+    // Page Share Settings -- (shows on "Page Share" card when a link is shared)
+    string ogSite_Name = siteOrganization;
+    string ogTitle = pageTitle;
+    string ogDescription = description;
+    string ogURL = siteURL + folder;
+    string canonical = siteURL + folder;
+    string ogImage = pageShareFolder + pageShareImage;
+    string ogImageWidth = pageShareImageWidth;
+    string ogImageHeight = pageShareImageHeight;
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Site Name -->
+    <title>@pageTitle</title>
+
+    <!-- Fonts (Lato -  add more fonts here) -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300, 400, 500, 600' rel='stylesheet' type='text/css'>
+
+    <!-- Default FB App ID unused -->
+    <meta property="fb:app_id" content="966242223397117" />
+
+    <!-- Google Site Verification -->
+    @* <meta name="google-site-verification" content="wdaytYpXJY1e9iWkOJXCS6HBuc0aCDxz--VJTfwTT3E" />*@
+
+    <!-- FavIcon(s) - (all your Logo... plenty of them!) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/content/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/content/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/content/icons/favicon-32x32.png" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Link Share Setup -->
+    <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share"). -->
+    <!-- (more info here: https://ogp.me/) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="@ogTitle" />
+    <meta property="og:determiner" content="The" />
+    <meta property="og:description" content="@ogDescription" />
+    <meta property="og:site_name" content="@ogSite_Name" />
+    <meta property="og:url" content="@ogURL" />
+    <meta property="og:image:url" content="@ogImage" />
+    <meta property="og:image:alt" content="Logo Image" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content=@ogImageWidth />
+    <meta property="og:image:height" content=@ogImageHeight />
+
+    <!-- Twitter Link Share Setup -->
+    <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:title" content="@ogTitle" />
+    <meta name="twitter:image" content="@ogImage" />
+    <meta name="twitter:image:width" content=@ogImageWidth />
+    <meta name="twitter:image:height" content=@ogImageHeight />
+
+    <!-- Website Setup -->
+    <meta name="description" content="@ogDescription" />
+    <link rel="canonical" href="@canonical" />
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/colors.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fontsize.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mycards.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/sizes.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/spacing.css" asp-append-version="true" />
+
+    <!-- Bootstrap and JQuery files -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My Javascript file -->
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</head>
+
+<body style="background-color: black; overflow-y: scroll;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md" style="padding: 0 10px; background-color: black;">
+
+        <div class="row" style="width:100%;">
+
+            <!-- Brand/logo -->
+            <div id="Home" class="col-md-5">
+                <a class="my-header-brand" href="/">
+                    <img style="width: 20px; height: 20px; padding-bottom: 0; margin-top:-5px;" src="~/Content/Svg/Site/Home.svg" /> @siteName
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="row" style="min-height: calc(100vh - 162px); width:100%; margin: 0;  background-color: antiquewhite;">
+
+        <div class="col-m-3" style="padding: 0">
+            <partial name="_Menu" />
+        </div>
+
+        <div id="maincontainter" class="col-m-6" style="padding: 0; background-color:chocolate;">
+            <div class="container-fluid body-content" style="padding: 0;">
+                @RenderBody()
+            </div>
+        </div>
+
+        <div class="col-m-3" style="padding: 0; background-color: burlywood;">
+            <partial name="@asideContent" />
+        </div>
+    </div>
+
+    <!-- Bottom Footer Navbar Menu -->
+    <footer id="my-footer" class="my-footer" role="contentinfo" aria-label="Site footer">
+
+        <div class="my-footer-module-group">
+
+            <div class="my-footer-module">
+                <h6 class="my-footer-header">Info</h6>
+
+                <ul>
+                    <li class="my-footer-item"><a class="nav-link" href="/">About Us</a></li>
+                    <li class="my-footer-item"><a class="nav-link" href="/Info/Contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="my-footer-module">
+                <h6 class="my-footer-header">Features</h6>
+                <ul>
+                    <li class="my-footer-item"><a class="nav-link" href="/countdowns/eventsmenu">Events</a></li>
+                    <li class="my-footer-item"><a class="nav-link" href="/pictures/Photos">Photos</a></li>
+                    <li class="my-footer-item"><a class="nav-link" href="/pictures/Humor">Humor</a></li>
+                </ul>
+            </div>
+
+            <div class="my-footer-module">
+                <h6 class="my-footer-header">Policies</h6>
+                <ul>
+                    <li class="my-footer-item"><a class="nav-link" href="/Info/Privacy">Privacy Policy</a></li>
+                    <li class="my-footer-item"><a class="nav-link" href="/Info/TOS">Terms of Service</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="my-footer-module m-0 p-0 w-100 bg-transparent" style="color:#f2f2f2;">
+
+            <p class="text-center m-0" style="font-size: 10px; padding: 5px 10px 12px 5px; color: burlywood; text-shadow: 0px 0px 1px black;">
+                <small>This website is privately owned and not associated or affiliated with any group other than the design team at:</small><br>
+                <a style="font-weight: 500; font-size: 14px; color: burlywood; text-shadow: 0px 0px 1px black;" href="/Info/Contact">
+                    <small>The Mikish Group © 2023 All Rights Reserved.</small>
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- script loading -->
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

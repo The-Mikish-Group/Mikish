@@ -1,0 +1,108 @@
+﻿@{
+    string siteURL = SiteHelpers.siteURL();
+    string category = ViewBag.Message;
+    int imageCount = Directory.GetFiles("wwwroot/content/pictures/" + category + "/", "*" + ".jpg").Length;
+    string imageLocation = "/Content/Pictures/" + category + "/";
+    string imageURL = siteURL + imageLocation;
+}
+
+<div class="container-fluid body-content" style="padding: 0;">
+
+    <!-- Input imageLink -->
+    <input type="text" spellcheck="false" value="" id="imageLink">
+
+    <!-- Controls -->
+    <div id="my-button-group" class="Container-fluid row">
+
+        <div class="col-4" id="my-button">
+            <button id="Previous" title="Previous image" style="border-right: none;">
+                <img style="width:24px; height: 24px;" src="/Content/Svg/Site/Previous.svg"> Prev
+            </button>
+        </div>
+
+        <div class="col-4" id="my-button">
+            <button title="Copy Link to Clipboard" tooltip="Copy this Link" onclick="copyLink()" onmouseout="copyLinkOut()">
+                <img style="width:26px; height:26px;" src="/Content/Svg/Site/Links.svg"> Copy Link
+            </button>
+        </div>        
+
+        <div class="col-4" id="my-button">
+            <button id="Next" title="Next image" style="border-left: none;">
+                Next <img style="width:24px; height: 24px;" src="/Content/Svg/Site/Next.SVG">
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Carousel for Picture slides -->
+    <div id="CarouselControl" Class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" touch="true" data-bs-interval="10000">
+
+        <!-- The slideshow -->
+        <div Class="carousel-inner" id="CarouselItems" style="color: white; width: 100%;"></div>
+
+        <!-- Left And right controls -->
+        <a class="carousel-control-prev" href="#CarouselControl" role="button" data-bs-slide="prev"></a>
+        <a class="carousel-control-next" href="#CarouselControl" role="button" data-bs-slide="next"></a>
+
+    </div>
+</div>
+
+<!-- Change container color -->
+<script>
+    $("#maincontainter").css("background-color", "#000000"); /* bg-black */
+</script>
+
+<!-- Create the Image List -->
+<script>
+    createImageList("@imageLocation", "x", @imageCount)
+</script>
+
+<!-- Keep imageLink updated with current link -->
+<script>
+    document.getElementById("imageLink").value = "@imageURL" + ('000000' + @imageCount).slice(-6) + ".jpg";
+    $("#CarouselControl").on('slide.bs.carousel', function (event) {
+        document.getElementById("imageLink").value = "@imageURL" + ('000000' + (@imageCount - event.to)).slice(-6) + ".jpg";
+    });
+    $("CarouselControl").to;
+</script>
+
+<!-- Copy Image Link -->
+<script>
+
+    function copyLink() {
+        document.getElementById("imageLink").autofocus = false;
+        const textToCopy = document.getElementById("imageLink").value;
+        document.getElementById("imageLink").hideFocus = true;
+        navigator.clipboard.writeText(textToCopy)
+        .then(() => { alert(textToCopy + ` Copied!`) })
+        .catch((error) => { alert(`Copy failed! ${error}`) })
+
+    }
+
+    //function copyLink() {
+    //    document.getElementById("imageLink").autofocus = false;
+    //    document.getElementById("imageLink").select();
+    //    document.execCommand("copy");
+    //    document.getElementById("imageLink").hideFocus = true;
+    //    alert('This link has been copied to your clipboard: \n' + document.getElementById("imageLink").value);
+    //}
+
+    function copyLinkOut() {
+        document.getElementById("imageLink").innerHTML = "Link";
+    }
+</script>
+
+<!-- Image Carousel forward and backwards buttosn -->
+<script>
+    $('#Previous').click(function (e) {
+        e.stopPropagation();
+        $('#CarouselControl').carousel('prev');
+        return false;
+    });
+
+    $('#Next').click(function (e) {
+        e.stopPropagation();
+        $('#CarouselControl').carousel('next');
+        return false;
+    });
+</script>

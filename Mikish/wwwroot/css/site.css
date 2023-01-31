@@ -1,0 +1,898 @@
+﻿.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    line-height: 1;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-size: 14px;
+    font-weight: 400;
+    overflow-y: scroll;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+/* My Custom Stuff*/
+
+p {
+    line-height: normal;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+#rightAlign,
+.rightAlign {
+    color: saddlebrown;
+    font-size: 12px;
+    text-align: right;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+    #rightAlign a:focus,
+    #rightAlign a:hover,
+    .rightAlign a:focus,
+    .rightAlign a:hover {
+        cursor: pointer;
+    }
+
+a {
+    color: saddlebrown;
+    text-decoration: none
+}
+
+embed,
+img,
+object {
+    max-width: 100%
+}
+
+img {
+    height: auto
+}
+
+a img {
+    border: none
+}
+
+ul {
+    list-style: none;
+}
+
+/****************/
+/* Header Stuff */
+/****************/
+.header {
+    color: black;
+    height: 87px;
+}
+
+.my-header-brand {
+    font-weight: 400;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    color: burlywood;
+    margin-bottom: 0px;
+}
+
+    .my-header-brand:hover,
+    .my-header-brand:focus {
+        color: chocolate;
+    }
+
+#HomeSVG:hover,
+#HomeSVG:focus {
+    fill: chocolate;
+}
+
+/*************************/
+/* Menu and Footer Stuff */
+/*************************/
+footer {
+    height: 0;
+}
+
+.my-footer-header {
+    font-size: 14px;
+}
+
+.my-footer-item a {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+    .my-footer-item a:focus,
+    .my-footer-item a:hover,
+    .my-footer-item a:active {
+        color: white;
+    }
+
+#asideMenuLine {
+    padding: 15px 0 15px 0;
+}
+
+.aside-nav-item {
+    font-size: 20px;
+    color: saddlebrown;
+    text-shadow: 0 0 1px black;
+    padding: 10px 5px;
+    margin: 5px 5px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 8px;
+    border: solid thin transparent;
+}
+
+    .aside-nav-item:focus,
+    .aside-nav-item:hover {
+        color: white;
+        border: solid thin #602c06;
+        background-color: chocolate;
+    }
+
+.nav-link {
+    color: chocolate;
+    padding-left: 5px;
+}
+
+.my-menu-header-custom {
+    font-size: 24px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    color: burlywood;
+    text-shadow: 0 0 1px #602c06;
+    border: solid thin transparent;
+}
+
+.my-menu-header {
+    font-size: 16px;
+}
+
+.my-menu-item a {
+    font-size: 16px;
+}
+
+.my-menu,
+.my-footer {
+    clear: both;
+    margin-top: 5px;
+    position: relative;
+    background: 0 0;
+}
+
+.my-menu-group {
+    padding-right: 15px;
+}
+
+.my-menu-group,
+.my-footer-module-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-weight: 700
+}
+
+.my-menu-item {
+    text-align: center;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+    .my-menu-item a {
+        font-size: 20px;        
+        color: chocolate;
+        text-shadow: 1px 1px 0 #602c06;
+        border: solid thin transparent;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+        .my-menu-item a:focus,
+        .my-menu-item a:hover,
+        .my-menu-item a:active {
+            color: white;
+            background-color: #e68c4d;
+            border: solid thin burlywood;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+.my-menu-item-pictures {
+    text-align: center;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+    .my-menu-item-pictures a {
+        font-size: 20px;
+        letter-spacing: 1.08px;
+        color: burlywood;
+        text-shadow: 0 0 1px #602c06;
+        padding-left: 20px;
+        white-space: nowrap;
+        border: solid thin transparent;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+        .my-menu-item-pictures a:focus,
+        .my-menu-item-pictures a:hover,
+        .my-menu-item-pictures a:active {
+            color: white;
+            background-color: burlywood;
+            border: solid thin #602c06;
+        }
+
+.my-menu-item-custom {
+    font-weight: 400;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 1px #602c06;
+    background-color: chocolate;
+    border: solid thin chocolate;
+}
+
+    .my-menu-item-custom button {
+        color: white;
+        text-shadow: 0 0 1px #602c06;
+    }
+
+    .my-menu-item-custom a {
+        font-size: 20px;
+        letter-spacing: 1.08px;
+        color: black;
+        text-shadow: 0 0 1px burlywood;
+        border: solid thin chocolate;
+        padding-left: 10px;
+        white-space: nowrap;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+        .my-menu-item-custom a:focus,
+        .my-menu-item-custom a:hover,
+        .my-menu-item-custom a:active {
+            color: white;
+            text-shadow: 0 0 1px #602c06;
+            background-color: burlywood;
+            border: solid thin #602c06;
+        }
+
+.my-menu-item-pictures {
+    text-align: left;
+    width: 60%;
+}
+
+.my-footer-module {
+    width: 33.33%;
+    padding: 0 0 0 5px;
+}
+
+    .my-footer-module ul {
+        margin: 0;
+        padding: 0;
+    }
+
+.my-menu-item,
+.my-menu-module {
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+
+    .my-menu-module-custom ul,
+    .my-menu-module ul {
+        margin: 0;
+        padding: 0;
+    }
+
+.my-menu-header,
+.my-footer-header {
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    color: burlywood;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.my-menu-group .my-menu-item,
+.my-footer-group .my-footer-item {
+    margin-bottom: 0;
+    color: chocolate;
+    font-weight: 700
+}
+
+    .my-menu-group .my-menu-item > a
+    .my-footer-group .my-footer-item > a {
+        color: burlywood;
+        display: inline-block;
+        line-height: 1
+    }
+
+.active a {
+    color: burlywood;
+    background-color: chocolate;
+}
+
+.my-menu-group li:last-child .my-footer-item,
+.my-footer-module-group li:last-child .my-footer-item {
+    margin-bottom: 0
+}
+
+/*******************/
+/* Countdown Stuff */
+/*******************/
+
+#timezone {
+    padding-top: 20px;
+    color: white;
+    text-shadow: 1px 0 2px black;
+}
+
+/* Countdown CSS */
+.ctdwn {
+    margin: 0 auto;
+    background-color: white;
+    width: 90%;
+    min-width: 300px;
+    max-width: 80%;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 0 white;
+    border: none;
+    display: block;
+    text-decoration: solid;
+}
+
+#eventname,
+#eventdate,
+#days,
+#hours,
+#minutes,
+#seconds,
+#lbldays,
+#lblhours,
+#lblminutes,
+#lblseconds {
+    color: white;
+    text-shadow: 0.5px 0.5px 0 black, 0.5px 0 0 black, 0 0.5px 0 black, -0.5px -0.5px 0 black, 0 -0.5px 0 black, -0.5px 0 0 black, 0 0 9px darkgray, 0 0 3px black;
+    /*letter-spacing: 1.08px;*/
+}
+
+#eventname {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+#eventdate {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#days {
+    font-size: 180px;
+    font-weight: 300;
+}
+
+#hours,
+#minutes,
+#seconds,
+#EventSeconds {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#lbldays {
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#lblhours,
+#lblminutes,
+#lblseconds {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/***********************/
+/* End Countdown Stuff */
+/***********************/
+
+/******************/
+/* Carousel Stuff */
+/******************/
+
+/* Make the image responsive as needed */
+.carousel-inner img {
+    width: 100%;
+    max-height: 908px;
+    max-width: 1000px;
+}
+
+#imageLink {
+    width: 100%;
+    height: 0;
+    color: black;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    nav-down: auto;
+}
+
+    #imageLink::selection {
+        background: black;
+    }
+
+/* end carousel*/
+
+
+/* Style for newTab button */
+#newTab {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    outline: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    border: none;
+    background-color: transparent;
+    color: #4a4b4c;
+    cursor: pointer
+}
+
+    #newTab:focus,
+    #newTab:hover {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        text-decoration: none;
+        text-decoration-line: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #4d4d4d;
+    }
+
+button {
+    width: 100%;
+    height: 28px;
+    color: burlywood;
+    text-shadow: 0 0 1px #602c06;
+    background-color: chocolate;
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+    button:focus,
+    button:hover,
+    button:active {
+        color: white;
+        background-color: burlywood;
+        text-shadow: 0 0 1px #602c06;
+        text-decoration: none;
+        text-decoration-line: none;
+        outline: none;
+    }
+
+#my-button-group {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 28px;
+}
+
+#my-button {
+    width: 33.33%;
+    padding: 0;
+    color: burlywood;
+    text-shadow: 1px 1px 0px #602c06;
+    background-color: chocolate;
+    border: solid thin #602c06;
+    border-top: none;
+    border-bottom: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+    #my-button:hover,
+    #my-button:focus,
+    #my-button:active {
+        color: white;
+        background-color: burlywood;
+        border: solid thin #602c06;
+        border-top: none;
+        border-bottom: none;
+        text-shadow: 1px 1px 0px #602c06;
+        text-decoration: none;
+        text-decoration-line: none;
+        outline: none;
+    }
+
+/* Define Gradient Heading CSS */
+.gradient-gold {
+    background: linear-gradient(to right, rgb(210, 105, 30) 0%, rgb(222, 184, 135) 100%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+#Home {
+    padding: 18px 0 10px 20px;
+}
+
+.myAsideCol {
+    width: 100%
+}
+
+/**********************/
+/* ExtraEffects Stuff */
+/**********************/
+#floaterContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.floater1,
+.floater2,
+.floater3,
+.floater4 {
+    position: fixed;
+    user-select: none;
+    z-index: 1000;
+    width: 10px;
+    height: 10px;
+}
+
+    /* Add back to style if using text character for floater
+        font-family: Cambria, Georgia, serif;
+        font-size: 14px;
+        line-height: 24px;*/
+    /*color: #FFFFFF;*/
+
+    .floater1:hover,
+    .floater2:hover,
+    .floater3:hover,
+    .floater4:hover {
+        cursor: default;
+    }
+
+/* For mobile phones:*/
+[class*="col-"] {
+    width: 100%;
+}
+
+#countdownWindowPadding {
+    padding: 0 0 15px 0;
+}
+
+/* For Tablets */
+@media only screen and (min-width:768px) {
+    .myAsideCol {
+        width: 100%
+    }
+
+    .my-menu-group,
+    .my-footer-group {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .my-menu-item {
+        width: 25%;
+        padding: 0;
+    }
+
+        .my-menu-item a {
+            border-right: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+    .my-menu-item-pictures {
+        text-align: left;
+        width: 50%;
+    }
+
+    .my-menu {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .active a {
+        color: burlywood;
+        background-color: chocolate;
+        border-right: none;
+        border: solid thin burlywood;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .my-footer-module-group {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .my-footer-module {
+        width: 25%;
+        padding: 10px 10px 10px 60px;
+    }
+
+    .my-footer {
+        margin-top: 0;
+    }
+
+    #countdownWindowPadding {
+        padding: 0 0 299px 0;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .myAsideCol {
+        width: 50%
+    }
+}
+
+@media only screen and (min-width:1080px) {
+    .myAsideCol {
+        width: 50%
+    }
+
+    .my-menu-item {
+        text-align: center;
+        width: 25%;
+    }
+
+        .my-menu-item a {
+            border-right: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+            .my-menu-item a:focus,
+            .my-menu-item a:hover,
+            .my-menu-item a:active {
+                width: 100%;
+                color: white;
+                text-shadow: 0 0 1px #602c06;
+                background-color: #e68c4d;
+                border-right: none;
+            }
+
+    .my-menu-item-pictures {
+        text-align: left;
+        width: 40%;
+    }
+
+    .active a {
+        color: burlywood;
+        background-color: chocolate;
+        border: solid thin burlywood;
+        border-right: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #countdownWindowPadding {
+        padding: 0 0 371px 0;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .myAsideCol {
+        width: 50%
+    }
+
+    #countdownWindowPadding {
+        padding: 0 0 431px 0;
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    #Home {
+        padding: 10px 0 10px 20px;
+    }
+
+    .myAsideCol {
+        width: 100%
+    }
+
+    .my-menu-group-pictures {
+        padding: 5px 15px 0 0;
+    }
+
+    .my-menu-group,
+    .my-menu-group-main {
+        padding: 5px 0 0 0;
+    }
+
+    .my-menu-item {
+        width: 100%;
+        text-align: left;
+        padding-left: 15px;
+        border-right: none;
+    }
+
+        .my-menu-item a {
+            width: 100%;
+            border-right: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+            .my-menu-item a:focus,
+            .my-menu-item a:hover,
+            .my-menu-item a:active {
+                width: 100%;
+                color: white;
+                text-shadow: 0 0 1px #602c06;
+                background-color: #e68c4d;
+                border-right: none;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+    .my-menu-item-pictures {
+        width: 50%;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .my-menu-item-custom a {
+        padding-left: 24px;
+        border: solid thin transparent;
+    }
+
+        .my-menu-item-custom a:focus,
+        .my-menu-item-custom a:hover,
+        .my-menu-item-custom a:active,
+        .my-menu-item-pictures a:focus,
+        .my-menu-item-pictures a:hover,
+        .my-menu-item-pictures a:active {
+            color: White;
+            background-color: burlywood;
+            border: solid thin #602c06;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+    .my-menu-header {
+        margin-right: 0;
+    }
+
+        .my-menu-header a {
+            padding-left: 15px;
+        }
+
+    .active a {
+        color: burlywood;
+        background-color: chocolate;
+        border: solid thin burlywood;
+        border-right: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+
+    #countdownWindowPadding {
+        padding: 0 0 519px 0;
+    }
+
+    .aside {
+        width: 100%;
+    }
+
+    .ctdwn {
+        width: 100%;
+    }
+
+    .col-m-1,
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2,
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3,
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-m-4,
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5,
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6,
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-m-7,
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8,
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9,
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-m-10,
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11,
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12,
+    .col-12 {
+        width: 100%;
+    }
+}

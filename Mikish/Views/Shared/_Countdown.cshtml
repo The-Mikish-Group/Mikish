@@ -1,0 +1,238 @@
+﻿@{
+    string eventName = ViewBag.Message;
+    string backgroundImageUrl = "/Content/Pictures/Countdowns/" + eventName + ".jpg";
+
+    //Cosmetic Fix for Names and add eventType and ExtraEffects where needed.
+    string ExtraEffects = "_Nothing";
+    int eventType = 0;
+    switch (eventName)
+    {
+        case "Spring":
+            {
+                eventName = "Spring";
+                eventType = 1;
+                break;
+            }
+
+        case "Summer":
+            {
+                eventName = "Summer";
+                eventType = 1;
+                break;
+            }
+
+        case "Autumn":
+            {
+                eventName = "Autumn (Fall)";
+                ExtraEffects = "_ExtraEffects";
+                eventType = 1;
+                break;
+            }
+
+        case "Winter":
+            {
+                eventName = "Winter";
+                ExtraEffects = "_ExtraEffects";
+                eventType = 1;
+                break;
+            }
+
+        case "Easter":
+            {
+                eventName = "Easter";
+                ExtraEffects = "_ExtraEffects";
+                break;
+            }
+
+        case "Halloween":
+            {
+                eventName = "Halloween";
+                ExtraEffects = "_ExtraEffects";
+                break;
+            }
+
+        case "Valentines":
+            {
+                eventName = "Valentine's Day";
+                ExtraEffects = "_ExtraEffects";
+                break;
+            }
+
+        case "Thanksgiving":
+            {
+                eventName = "Thanksgiving Day";
+                ExtraEffects = "_ExtraEffects";
+                break;
+            }
+
+        case "Christmas":
+            {
+                eventName = "Christmas Day";
+                ExtraEffects = "_ExtraEffects";
+                break;
+            }
+
+        case "Mothers":
+            {
+                eventName = "Mother's Day";
+                break;
+            }
+
+        case "Fathers":
+            {
+                eventName = "Father's Day";
+                break;
+            }
+
+        case "Presidents":
+            {
+                eventName = "Presidents Day";
+                break;
+            }
+
+        case "Labor":
+            {
+                eventName = "Labor Day";
+                break;
+            }
+
+        case "Veterans":
+            {
+                eventName = "Veteran's Day";
+                break;
+            }
+
+        case "NewYears":
+            {
+                eventName = "New Years Day";
+                break;
+            }
+
+        case "Independence":
+            {
+                eventName = "Independence Day";
+                break;
+            }
+
+        case "Memorial":
+            {
+                eventName = "Memorial Day";
+                break;
+            }
+
+        case "Lincoln":
+            {
+                eventName = "Lincoln's Birthday";
+                break;
+            }
+
+        case "Washington":
+            {
+                eventName = "Washington's Birthday";
+                break;
+            }
+
+        case "Jefferson":
+            {
+                eventName = "Jefferson's Birthday";
+                break;
+            }
+
+        case "Army":
+            {
+                eventName = "Army's Birthday";
+                break;
+            }
+
+        case "AirForce":
+            {
+                eventName = "AirForce Birthday";
+                break;
+            }
+
+        case "Navy":
+            {
+                eventName = "Navy Birthday";
+                break;
+            }
+
+        case "MarineCorp":
+            {
+                eventName = "MarineCorp Birthday";
+                break;
+            }
+
+        case "NationalGuard":
+            {
+                eventName = "NationalGuard Birthday";
+                break;
+            }
+
+    }
+
+    // Get the Event DataString from the Holidays Class
+    string eventDateString = Holidays.GetEventUtcDateString(ViewBag.Message, DateTime.Now.Year);    
+    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
+    { 
+        // Add a year if past event date and try again
+        eventDateString = Holidays.GetEventUtcDateString(ViewBag.Message, DateTime.Now.Year + 1); 
+    }
+
+}
+
+<partial name="@ExtraEffects" />
+
+<div id="countdownWindow" style="margin: 0; background-color: transparent; background-image: url('@backgroundImageUrl'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- (Count) -->
+    <div class="ctdwn" style="padding: 0; background-color: transparent;">
+
+        <div id="includes_countdown_window_padding">
+
+            <!-- Event Name -->
+            <h2 id="eventname">@eventName</h2>
+
+            <!-- Event Date -->
+            <h6 id="eventdate"></h6>
+
+            <!-- Days -->
+            <p id="days"></p>
+            <h6 id="lbldays"></h6>
+
+            <!-- Hours, Minutes, and Seconds -->
+            <div class="row" style="width: 100%">
+
+                <div class="col-4 center" style="width: 33.33%; min-width: 60px; text-align: center;">
+                    <h4 id="hours"></h4>
+                    <h6 id="lblhours"></h6>
+                </div>
+                <div class="col-4 center" style="width: 33.33%; min-width: 60px; text-align: center;">
+                    <h4 id="minutes"></h4>
+                    <h6 id="lblminutes"></h6>
+                </div>
+                <div class="col-4 center" style="width: 33.33%; min-width: 60px; text-align: center;">
+                    <h4 id="seconds"></h4>
+                    <h6 id="lblseconds"></h6>
+                </div>
+            </div>
+            <div id="timezone"></div>
+        </div>
+    </div>
+
+    <div id="countdownWindowPadding"></div>
+
+</div>
+
+<script>
+    var eventType = ('@eventType');
+    var eventName = ('@eventName');
+    var eventDate = new Date(Date.parse('@eventDateString'));
+
+    if (eventType == 1) {
+        if (eventName.localeCompare("Autumn (Fall)") == 0) {
+            eventName = "Autumn";
+        };
+    };
+
+    eventCountdown(eventName, eventType, eventDate);
+</script>

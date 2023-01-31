@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1"
+	 id="FB_Square" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="FB_Square.SVG.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="640px" height="640px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+<sodipodi:namedview  inkscape:cy="320" inkscape:cx="320" inkscape:zoom="1.3079102" borderopacity="1" bordercolor="#666666" showgrid="false" pagecolor="#ffffff" inkscape:window-y="-8" inkscape:window-x="-8" inkscape:window-height="1057" inkscape:window-width="1858" inkscape:current-layer="FB_Square" inkscape:pageshadow="2" inkscape:pageopacity="0" id="namedview5" inkscape:window-maximized="1" gridtolerance="10" guidetolerance="10" objecttolerance="10">
+	</sodipodi:namedview>
+<path id="Background" fill="#3C599B" d="M523.438,600H116.563C74.28,600,40,565.729,40,523.438V116.563
+	C40,74.28,74.28,40,116.563,40h406.875C565.729,40,600,74.28,600,116.563v406.875C600,565.729,565.729,600,523.438,600z"/>
+<path fill="#355388" d="M600,116.563c0-22.277-9.521-42.326-24.708-56.317L60.24,575.286C74.231,590.477,94.282,600,116.563,600
+	h406.875C565.729,600,600,565.729,600,523.438V116.563z"/>
+<path fill="#2E4E73" d="M600,523.438V369.023c-0.148-6.492-0.241-12.932-0.25-19.273L395.778,149.741L291.067,250.248l6.271,6.27
+	l-60.696,63.635l49.825,45.216l-6.442,6.443l53.045,53.036l-61.155,61.165L383.25,600h140.188C565.729,600,600,565.729,600,523.438z
+	"/>
+<path id="f_1_" fill="#FFFFFF" d="M271.031,215.787v46.949h-34.39v57.417h34.39v170.591h70.655V320.152h47.418
+	c0,0,4.448-27.534,6.597-57.618h-53.745c0,0,0-33.412,0-39.259c0-5.868,7.708-13.758,15.32-13.758h38.502v-59.775h-52.347
+	C269.286,149.741,271.031,207.207,271.031,215.787L271.031,215.787z"/>
+</svg>

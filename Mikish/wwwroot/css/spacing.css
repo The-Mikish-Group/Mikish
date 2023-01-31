@@ -1,0 +1,472 @@
+/* Responsive Extra Spacing */
+
+/* #region Extra bottom spacing */
+.about-view-bottom-spacing,
+.calendar-view-bottom-spacing,
+.picture02-view-bottom-spacing,
+.picture03-view-bottom-spacing {
+    min-height: 0;
+}
+.contact-view-bottom-spacing {
+    min-height: 0;
+}
+.gallery-view-bottom-spacing {
+    min-height: 0;
+}
+.store-view-bottom-spacing {
+    min-height: 0;
+}
+.nazarenes-view-bottom-spacing {
+    min-height: 0;
+}
+.links-view-bottom-spacing {
+    min-height: 0;
+}
+.picture01-view-bottom-spacing {
+    min-height: 180px;
+}
+.please-contact-spacing {
+    min-height: 22px;
+}
+
+
+/* #endregion */
+
+/* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Small tablet styles */
+@media (min-width: 575px) and (max-width: 768px) {
+ 
+    /* Extra Spacing */
+    .about-view-bottom-spacing {
+        min-height: 0;
+    }
+    .contact-view-bottom-spacing {
+        min-height: 0;
+    }
+    .staff-view-bottom-spacing {
+        min-height: 518px;
+    }
+    .calendar-view-bottom-spacing {
+        min-height: 42px;
+    }
+    .gallery-view-bottom-spacing {
+        min-height: 972px;
+    }
+    .picture01-view-bottom-spacing {
+        min-height: 752px;
+    }
+    .picture02-view-bottom-spacing {
+        min-height: 340px;
+    }
+    .picture03-view-bottom-spacing {
+        min-height: 156px;
+    }
+    .purpose-view-bottom-spacing {
+        min-height: 49px;
+    }
+    .nazarenes-view-bottom-spacing {
+        min-height: 318px;
+    }
+    .links-view-bottom-spacing {
+        min-height: 298px;
+    }
+    .please-contact-spacing {
+        min-height: 47px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
+@media (min-width: 768.01px) and (max-width: 991px) {  
+
+    .about-view-bottom-spacing {
+        min-height: 0;
+    }
+    .contact-view-bottom-spacing {
+        min-height: 16px;
+    }
+    .please-contact-spacing {
+        min-height: 119px;
+    }
+    .staff-view-bottom-spacing {
+        min-height: 92px;
+    }
+    .calendar-view-bottom-spacing {
+        min-height: 42px;
+    }
+    .gallery-view-bottom-spacing {
+        min-height: 144px;
+    }
+    .picture01-view-bottom-spacing {
+        min-height: 752px;
+    }
+    .picture02-view-bottom-spacing {
+        min-height: 340px;
+    }
+    .picture03-view-bottom-spacing {
+        min-height: 156px;
+    }
+    .purpose-view-bottom-spacing {
+        min-height: 49px;
+    }
+    .nazarenes-view-bottom-spacing {
+        min-height: 20px;
+    }
+    .links-view-bottom-spacing {
+        min-height: 254px;
+    }
+    .colors-view-bottom-spacing {
+        min-height: 92px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+
+    .about-view-bottom-spacing {
+        min-height: 0;
+    }
+
+    .contact-view-bottom-spacing {
+        min-height: 148px;
+    }
+
+    .staff-view-bottom-spacing {
+        min-height: 518px;
+    }
+
+    .calendar-view-bottom-spacing {
+        min-height: 42px;
+    }
+
+    .gallery-view-bottom-spacing {
+        min-height: 0;
+    }
+
+    .picture01-view-bottom-spacing {
+        min-height: 752px;
+    }
+
+    .picture02-view-bottom-spacing {
+        min-height: 340px;
+    }
+
+    .picture03-view-bottom-spacing {
+        min-height: 156px;
+    }
+
+   .store-view-bottom-spacing {
+        min-height: 304px;
+    } 
+
+    .nazarenes-view-bottom-spacing {
+        min-height: 318px;
+    }
+
+    .links-view-bottom-spacing {
+        min-height: 324px;
+    }
+
+    .please-contact-spacing {
+        min-height: 90px;
+
+    }
+
+    .colors-view-bottom-spacing {
+    min-height: 156px;
+    }
+
+    /* #region Bible Extra bottom spacing */
+
+    .bible-view-bottom-spacing {
+        min-height: 160px;
+    }
+
+    .oldtestament-view-bottom-spacing {
+        min-height: 160px;
+    }
+    .newtestament-view-bottom-spacing {
+        min-height: 638px;
+    }
+
+    .acts-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .amos-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .colossians-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .chronicles1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .chronicles2-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .corinthians1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .corinthians2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .daniel-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .deuteronomy-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .ecclesiastes-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .ephesians-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .esther-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .exodus-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .ezekiel-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .galatians-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .genesis-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .habakkuk-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .haggai-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .hebrews-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .hosea-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .isaiah-view-bottom-spacing {
+        min-height: 760px;
+    }
+
+    .james-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .jeremiah-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .job-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .joel-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .john-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .john1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .john2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .john3-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .jonah-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .joshua-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .jude-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .judges-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .kings1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .kings2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .lamentations-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .leviticus-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .luke-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .malachi-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .mark-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .matthew-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .micah-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .nahum-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .nehemiah-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .numbers-view-bottom-spacing {
+        min-height: 800px;
+    }
+
+    .obadiah-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .peter1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .peter2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .philemon-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .philippians-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .proverbs-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .psalms-view-bottom-spacing {
+        min-height: 640px;
+    }
+
+    .revelation-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .romans-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .ruth-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .samuel1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .samuel2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .songofsolomon-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .thessalonians1-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .thessalonians2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .timothy1-view-bottom-spacing {
+        min-height: 640px;
+    }
+
+    .timothy2-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .titus-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .zechariah-view-bottom-spacing {
+        min-height: 840px;
+    }
+
+    .zephaniah-view-bottom-spacing {
+        min-height: 840px;
+    }
+    /* #endregion */
+        
+}
+/* #endregion */
+
+/* #region (BS -xlg- ) (min-width: 1200px) Medium Desktop */
+@media (min-width: 1200px) {
+    
+    .please-contact-spacing {
+        min-height: 67px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -xlg- ) (min-width: 1399.98px) Large Desktop */
+@media (min-width: 1399.98px) {
+    
+    .please-contact-spacing {
+        min-height: 44px;
+    }
+}
+/* #endregion */

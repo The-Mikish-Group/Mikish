@@ -1,0 +1,45 @@
+﻿@{
+    string choice01 = "";
+    string choice02 = "";
+    string choice03 = "";
+    string choice04 = "";
+    string msg = ViewBag.Message;
+
+    if (msg == "Photos") { choice01 = "active"; }
+    if (msg == "Humor") { choice02 = "active"; }
+    if (msg == "EventsMenu") { choice03 = "active"; }
+    if (msg == "Links") { choice04 = "active"; }
+}
+
+<div id="my-menu" class="my-menu" style="margin: 0; padding: 5px 0 5px 0; background-color: antiquewhite;" role="contentinfo" aria-label="Site menu" >
+    <div class="my-menu-group" style="padding-top: 5px;" data-metrics-category="Page Menu" data-metrics-label="Menu">
+       <div class="my-menu-item">
+            <h6 class="my-menu-header" @choice01 >
+                <span>
+                    <a class="nav-link" href="~/Pictures/Photos">Photos <img style="width:38px; height:36px;" src="~/Content/Svg/Site/Photos.svg" /></a>
+                </span>
+            </h6>
+        </div>
+        <div class="my-menu-item">
+            <h6 class="my-menu-header" @choice02 >
+                <span>
+                    <a class="nav-link" href="~/Pictures/Humor">Humor <img style="width:38px; height:36px;" src="~/Content/Svg/Site/Humor.svg" /></a>
+                </span>
+            </h6>
+        </div>
+        <div class="my-menu-item">
+            <h6 class="my-menu-header @choice03" >
+                <span>
+                    <a class="nav-link" href="~/Countdowns/EventsMenu">Events <img style="width:38px; height:36px;" src="~/Content/Svg/Site/Countdowns.svg" /></a>
+                </span>
+            </h6>
+        </div>
+        <div class="my-menu-item">
+            <h6 class="my-menu-header @choice04" >
+                <span>
+                    <a class="nav-link" href="~/Info/Links">Links <img style="margin-left:20px; width:38px; height:36px;" src="~/Content/Svg/Site/Links.svg" /></a>
+                </span>
+            </h6>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Content\Pictures\Countdowns\elections.jpgx" />
+    <Content Remove="wwwroot\Content\Pictures\Countdowns\Events.jpgx" />
+    <Content Remove="wwwroot\Content\Pictures\Countdowns\Legalization.jpgx" />
+    <Content Remove="wwwroot\js\site_old.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

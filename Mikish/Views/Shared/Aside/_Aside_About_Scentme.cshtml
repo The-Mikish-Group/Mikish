@@ -1,0 +1,28 @@
+﻿@{
+    string siteName = SiteHelpers.siteName();
+    string siteFacebookPageURL = SiteHelpers.siteFacebookPageURL();
+}
+
+<div style="padding-left:15px; padding-right: 15px;">
+    <div class="myAsideCol">
+        <div id="_Aside_About" style="max-width: 448px; padding: 5px 10px 5px 10px;">
+
+            <h2>
+                @siteName <button title="@siteName" id="newTab" style="height:80px; width:80px;" onclick="newTab('@siteFacebookPageURL')" /> <img style="height:80px; width:80px;" src="~/Content/Svg/Site/FB_Home.svg" />
+            </h2>
+            <br />
+
+            <p style="color: black; font-size: larger;">
+                <b>Welcome to @siteName and enjoy browsing!</b>
+            </p>
+
+            <!-- Description -->
+            @*<div >
+                <p>
+                    <strong>Scent Me</strong> and enjoy Life!
+                </p>
+            </div>*@
+            <br />
+        </div>
+    </div>
+</div>

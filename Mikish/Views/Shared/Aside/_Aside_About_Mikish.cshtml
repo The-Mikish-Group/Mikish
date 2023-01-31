@@ -1,0 +1,33 @@
+﻿@{
+    string siteName = SiteHelpers.siteName();
+    string siteFacebookPageURL = SiteHelpers.siteFacebookPageURL();
+}
+
+<div style="padding-left:15px; padding-right: 15px;">
+    <div class="myAsideCol">
+        <div id="_Aside_About" style="max-width: 448px; padding: 5px 10px 5px 10px;">
+
+            <h2>
+                @siteName <button title="@siteName" id="newTab" style="height:80px; width:80px; padding-bottom: 10px;" onclick="newTab('@siteFacebookPageURL')" /> <img style="height:80px; width:80px; padding-bottom: 10px;" src="/Content/Svg/Site/FB_Home.svg" />
+            </h2>
+
+            <p style="color: black; font-size: larger;">
+                <b>Welcome, and enjoy browsing!</b>
+            </p>
+            <p class="text-black;">
+                The purpose of this site is <b>entertainment</b>; <i>our</i> fun is from developing the website, while <i>you</i> might enjoy looking through the images in the <a class="text-black;" href="/pictures/Photos">Photos</a> and <a class="text-black;" href="/pictures/Humor">Humor</a> sections as well as from taking advantage of the Event <a class="text-black;" href="/Countdowns/EventsMenu">Countdowns</a>.
+            </p>
+            <p class="text-black;">
+                &bull; <b><a class="text-black;" href="/Pictures/Photos">Photos</a></b> contains a small, but growing selection of interesting pictures taken by our friends, or found on the Internet.
+            </p>
+            <p class="text-black;">
+                &bull; <b><a class="text-black;" href="/Pictures/Humor">Humor</a></b> contains a large selection of often humorous jokes, memes, and cartoons from various Mikish Group Members.
+            </p>
+            <p class="text-black;">
+                &bull; <b><a class="text-black;" href="/Countdowns/EventsMenu">Event Countdowns</a></b> originally started with Spring and other Season countdowns while awaiting the end of a long winter; now several other Events are on the menu.
+            </p>
+            <br />
+            <br />
+        </div>
+    </div>
+</div>

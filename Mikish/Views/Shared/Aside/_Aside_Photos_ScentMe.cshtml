@@ -1,0 +1,36 @@
+﻿@{
+    string category = ViewBag.Message;
+    int imageCount = Directory.GetFiles("wwwroot/content/pictures/" + category + "/", "*" + ".jpg").Length;
+ }
+
+<div style="padding: 15px;">
+    <h2>ScentMe <img style="height:80px; width:80px;" src="~/Content/Svg/Site/Photos.svg" /></h2>
+    <br />
+    <p style="padding-left:20px; color: black; font-size: 18px; font-weight:400;">
+        A collection Of @imageCount ScentMe images.
+    </p>
+</div>
+
+<!-- More Picture Choices -->
+<br />
+<div id="my-menu" class="my-menu" style="margin: 0;" role="contentinfo" aria-label="Site menu">
+    <div class="gradient-gold">
+        <h5 style="padding: 0 0 0 15px"><img style="width: 38px; height: 36px" src="~/Content/Svg/Site/Photos.svg" />More Photos...</h5>
+
+        <div class="my-menu-group-pictures" style="padding:0 0 0 15px;" data-metrics-category="Page Menu" data-metrics-label="Menu">
+            <div class="my-menu-item-pictures">
+                    <h6 class="my-menu-header"><a class="nav-link" href="~/pictures/Sunsets">Sunsets</a></h6>
+            </div>
+            <div class="my-menu-item-pictures">
+                <h6 class="my-menu-header"><a class="nav-link" href="~/pictures/Fishing">Fishing</a></h6>
+            </div>
+            <div class="my-menu-item-pictures">
+                <h6 class="my-menu-header"><a class="nav-link" href="~/pictures/Wildlife">Wildlife</a></h6>
+            </div>
+            @*<div class="my-menu-item-pictures">
+                <h6 class="my-menu-header"><a class="nav-link" href="~/pictures/ScentMe">Scent Me</a></h6>
+            </div>*@
+        </div>
+
+    </div>
+</div>

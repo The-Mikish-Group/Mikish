@@ -1,0 +1,57 @@
+﻿@{
+    string siteName = SiteHelpers.siteName();
+    string siteFacebookPageURL = SiteHelpers.siteFacebookPageURL();
+}
+
+<div style="padding-left:15px; padding-right: 15px;">
+    <div class="myAsideCol">
+        <div id="_Aside_About" style="max-width: 448px; padding: 5px 10px 5px 10px;">
+
+            <h2>
+                @siteName <button title="@siteName" id="newTab" style="height:80px; width:80px;" onclick="newTab('@siteFacebookPageURL')" /> <img style="height:80px; width:80px;" src="~/Content/Svg/Site/FB_Home.svg" />
+            </h2>
+            <br />
+
+            <p style="color: black; font-size: larger;">
+                <b>Welcome, to the Lake and enjoy browsing!</b>
+            </p>
+
+            <!-- Description -->
+            <div >
+                <p>
+                    <strong>Lake Catatoga</strong> has a surface area of 66 acres, with a beautiful dam located on its northern end. 
+                    The lake is situated midway between <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/St._Louis')">St. Lous, Missouri
+                    </span> and <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Springfield,_Illinois')">Springfield, Illinois</span>... 
+                    nine miles south of the city of <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Carlinville,_Illinois')">Carlinville</span>,
+                    and eighteen miles west of <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Litchfield,_Illinois')">Litchfield</span>
+                    in <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Macoupin_County,_Illinois')">Macoupin County</span>,
+                    which is named after Macoupin Creek, near Carlinville and meanders southwest to the 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Illinois_River')">Illinois River</span>.
+                </p>
+                <p>
+                    The region was previously inhabited by various Illinoisan Indians; Miami and Wea, as well as the tribes of the Illinois Confederation, 
+                    including the Kaskaskia, Peoria, Tamaroa, Cahokia, and Mitchigamea. "Macoupin" is actually the 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Miami-Illinois_language')">Miami-Illinois</span> term for the 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Nelumbo_lutea')">"American Lotus"</span> (Nelumbo lutea). Unfortunately, 
+                    none of the native Indians remain, although some descendants of the earliest European settlers claim partial ancestry. The first European arrivals 
+                    were French explorers in the seventeenth century, travelling southward down the major rivers. However, the main European settlement came from the 
+                    southwest, as people moved inland from the established transportation route of the Mississippi River.
+                </p>
+                <p>
+                    Today, Lake Catatoga recaptures a bit of its Indian heritage with themed street names and even
+                    <span id="newTab" onclick="newTab('http://lakecatatoga.com/pictures/totempole')">Totem Poles</span> located at the entrances. 
+                    With a peaceful ambiance and convenient location, it's a highly desirable place to live and visit with a "no wake" policy creating safer conditions 
+                    for swimming and boating. The Lake is annually stocked with a variety of fish including: 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Crappie')">Crappie</span>, 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Walleye')">Walleye</span>, 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Bluegill')">Bluegill</span>, 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Catfish')">Catfish</span>, 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Largemouth_bass')">Largemouth Bass</span> and 
+                    <span id="newTab" onclick="newTab('https://en.wikipedia.org/wiki/Rock_bass')">Rock Bass</span> making for great fishing. Though the lake is 
+                    <b>private</b>, a Fishing License is required and Boat Registration is mandatory.
+                </p>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>

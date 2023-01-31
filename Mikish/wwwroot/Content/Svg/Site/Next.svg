@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Next_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="640px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+<path id="Body" fill="#F7931E" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M505.101,276.432L196.333,49c-29.93-22.002-61.16,5.366-61.16,5.366c-23.921,22.166-29.506,60.634,0,80.731L435,320.006
+	L135.138,504.899c-29.471,16.768-23.922,58.582,0,80.73c0,0,29.164,26.039,64.529,3.37L505.03,363.514
+	c17.662-17.662,17.662-36.181,17.662-43.541C522.692,312.667,522.692,294.024,505.101,276.432z"/>
+<radialGradient id="Gradient_1_" cx="239.5439" cy="320.022" r="288.9503" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FBB03B"/>
+	<stop  offset="0.4222" style="stop-color:#FAAE3B;stop-opacity:0.7678"/>
+	<stop  offset="0.5743" style="stop-color:#F7A73A;stop-opacity:0.6841"/>
+	<stop  offset="0.6827" style="stop-color:#F29B39;stop-opacity:0.6245"/>
+	<stop  offset="0.7704" style="stop-color:#EB8B37;stop-opacity:0.5763"/>
+	<stop  offset="0.8454" style="stop-color:#E27535;stop-opacity:0.535"/>
+	<stop  offset="0.9119" style="stop-color:#D65932;stop-opacity:0.4985"/>
+	<stop  offset="0.9705" style="stop-color:#C93A2F;stop-opacity:0.4662"/>
+	<stop  offset="1" style="stop-color:#C1272D;stop-opacity:0.45"/>
+</radialGradient>
+<path id="Gradient" display="none" fill="url(#Gradient_1_)" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M505.101,276.432L196.333,49c-29.93-22.002-61.16,5.366-61.16,5.366c-23.921,22.166-29.506,60.634,0,80.731L435,320.006
+	L135.138,504.899c-29.471,16.768-23.922,58.582,0,80.73c0,0,29.164,26.039,64.529,3.37L505.03,363.514
+	c17.662-17.662,17.662-36.181,17.662-43.541C522.692,312.667,522.692,294.024,505.101,276.432z"/>
+</svg>
