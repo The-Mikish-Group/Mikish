@@ -14,13 +14,13 @@ function createImageList(imageLocation, altText, imageCount) {
     var i = imageCount;
 
     // Make *first* Picture "active" or Carousel won't start"'"
-    var text = "<div class='carousel-item active'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></img></div>";
+    var text = "<div class='carousel-item w-100 active'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></img></div>";
     i = i - 1;
 
     // Make the rest of the list
     while (i > 0) {
 
-        text = text + "<div class='carousel-item'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></img></div>";
+        text = text + "<div class='carousel-item w-100'><img src='" + imageLocation.concat("000000".concat(i).slice(-6)) + ".jpg' alt='" + altText.concat("000000".concat(imageCount).slice(-6)) + "' /></img></div>";
         i = i - 1;
 
     }

@@ -435,8 +435,8 @@ footer {
 /* Make the image responsive as needed */
 .carousel-inner img {
     width: 100%;
-    max-height: 908px;
-    max-width: 1000px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #imageLink {
@@ -825,7 +825,7 @@ button {
     }
 
     #countdownWindowPadding {
-        padding: 0 0 519px 0;
+        padding: 0 0 708px 0;
     }
 
     .aside {

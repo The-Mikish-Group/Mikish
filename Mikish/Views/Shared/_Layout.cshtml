@@ -13,9 +13,9 @@
     string folder = "";
 
     string pageShareFolder = siteURL + "/Content/PageShares/";
-    string pageShareImage = "BlueSun.png";
-    string pageShareImageHeight = "300";
-    string pageShareImageWidth = "300";
+    string pageShareImage = "BlueSun-ps.png";
+    string pageShareImageHeight = "1200";
+    string pageShareImageWidth = "1200";
 
     string msg = ViewBag.Message.Replace(" ", "");
 
@@ -25,9 +25,9 @@
         case "About":
             {
                 description = "Enjoying Life!";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
                 break;
             }
 
@@ -36,9 +36,9 @@
                 pageTitle = "Contact Us" + " | " + siteNameShort;
                 folder = "/Info/Contact/";
                 description = "Reach out and and we'll respond!";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
                 break;
             }
 
@@ -47,9 +47,9 @@
                 pageTitle = "Privacy Policy" + " | " + siteNameShort;
                 folder = "/Info/Privacy";
                 description = "Privacy Policy";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
                 break;
             }
 
@@ -58,9 +58,9 @@
                 pageTitle = "Terms of Service" + " | " + siteNameShort;
                 folder = "/Info/TOS";
                 description = "Terms of Service";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
                 break;
             }
 
@@ -70,9 +70,9 @@
                 folder = "/Info/Links";
                 asideContent = "Aside/_Aside_Links";
                 description = "More Links";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
                 break;
             }
 
@@ -83,9 +83,9 @@
                 asideContent = "Aside/_Aside_Events_" + msg;
 
                 description = "Days until... Countdowns!";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                pageShareImage = "BlueSun-ps.png";
+                //pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
 
                 break;
             }
@@ -96,9 +96,19 @@
                 folder = "/Info/SvgFiles";
                 asideContent = "Aside/_Aside_Info_SVGFiles";
                 description = "SVG Collection";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
+                break;
+            }
+        case "Elephant":
+            {
+                pageTitle = "The parable of the blind men and an elephant" + " | " + siteNameShort;
+                folder = "/Info/Elephant";
+                description = "A Poem by John Godfrey Saxe";
+                pageShareImage = "Elephant.png";
+                pageShareImageHeight = "1158";
+                pageShareImageWidth = "747";
                 break;
             }
         #endregion
@@ -110,9 +120,9 @@
                 asideContent = "Aside/_Aside_Photos";
 
                 description = "Our Photos!";
-                pageShareImage = "BlueSun.png";
-                pageShareImageHeight = "300";
-                pageShareImageWidth = "300";
+                //pageShareImage = "BlueSun-ps.png";
+                pageShareImageHeight = "1200";
+                pageShareImageWidth = "1200";
 
                 break;
             }
@@ -123,8 +133,7 @@
                 folder = "/Pictures/" + msg;
                 asideContent = "Aside/_Aside_Photos_" + msg;
 
-                description = "Beautiful Sunsets!";
-                pageShareImage = "Sunsets.jpg";
+                pageShareImage = msg + ".jpg";
                 pageShareImageHeight = "1360";
                 pageShareImageWidth = "1360";
 
@@ -288,7 +297,7 @@
                 break;
             }
         #endregion
-        #region Hollidays
+        #region Holidays
         case "NewYears":
             {
                 pageTitle = msg + " | " + siteNameShort;
@@ -353,8 +362,8 @@
 
                 description = "Days until " + msg + "!";
                 pageShareImage = msg + ".jpg";
-                pageShareImageHeight = "600";
-                pageShareImageWidth = "600";
+                pageShareImageHeight = "1000";
+                pageShareImageWidth = "1000";
 
                 break;
             }
@@ -423,8 +432,8 @@
 
                 description = "Days until " + msg + "!";
                 pageShareImage = msg + ".jpg";
-                pageShareImageHeight = "600";
-                pageShareImageWidth = "600";
+                pageShareImageHeight = "800";
+                pageShareImageWidth = "800";
 
                 break;
             }
@@ -437,8 +446,8 @@
 
                 description = "Days until " + msg + "!";
                 pageShareImage = msg + ".jpg";
-                pageShareImageHeight = "600";
-                pageShareImageWidth = "600";
+                pageShareImageHeight = "800";
+                pageShareImageWidth = "800";
 
                 break;
             }
@@ -451,8 +460,8 @@
 
                 description = "Days until " + msg + "!";
                 pageShareImage = msg + ".jpg";
-                pageShareImageHeight = "600";
-                pageShareImageWidth = "600";
+                pageShareImageHeight = "626";
+                pageShareImageWidth = "626";
 
                 break;
             }
@@ -465,8 +474,8 @@
 
                 description = "Days until " + msg + "!";
                 pageShareImage = msg + ".jpg";
-                pageShareImageHeight = "600";
-                pageShareImageWidth = "600";
+                pageShareImageHeight = "1360";
+                pageShareImageWidth = "1360";
 
                 break;
             }
@@ -479,8 +488,8 @@
 
                 description = "Days until " + msg + "!";
                 pageShareImage = msg + ".jpg";
-                pageShareImageHeight = "600";
-                pageShareImageWidth = "600";
+                pageShareImageHeight = "640";
+                pageShareImageWidth = "640";
 
                 break;
             }
@@ -685,24 +694,53 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+    
+    <!-- Site Name -->
+    <title>@pageTitle</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="@ogDescription" />
+    <link rel="canonical" href="@canonical" />
 
-    <!-- Site Name -->
-    <title>@pageTitle</title>
-
-    <!-- Fonts (Lato -  add more fonts here) -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300, 400, 500, 600' rel='stylesheet' type='text/css'>
+    <!-- Link Share Setup -->
+    <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share or Page Share"). -->
+    <!-- (more info here: https://ogp.me/) -->
 
     <!-- Default FB App ID unused -->
     <meta property="fb:app_id" content="966242223397117" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="@ogTitle" />
+    <meta property="og:determiner" content="The" />
+    <meta property="og:description" content="@ogDescription" />
+    <meta property="og:site_name" content="@ogSite_Name" />
+    <meta property="og:url" content="@ogURL" />
+    <meta property="og:image" content="@ogImage" />
+    @*<meta property="og:image:url" content="@ogImage" />*@
+    <meta property="og:image:secure_url" content="@ogImage" />
+    <meta property="og:image:alt" content="Share Image" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="@ogImageWidth" />
+    <meta property="og:image:height" content="@ogImageHeight" />
+
+    <!-- Twitter Link Share Setup -->
+    <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:title" content="@ogTitle" />
+    <meta name="twitter:image" content="@ogImage" />
+    <meta name="twitter:image:width" content="@ogImageWidth" />
+    <meta name="twitter:image:height" content="@ogImageHeight" />    
+
+
+
     <!-- Google Site Verification -->
-    @* <meta name="google-site-verification" content="wdaytYpXJY1e9iWkOJXCS6HBuc0aCDxz--VJTfwTT3E" />*@
+     <meta name="google-site-verification" content="23ZjV4j9CxM5SWQXeC7pB-ylHq3qhcPpyoncr5A7GnA" />
 
     <!-- FavIcon(s) - (all your Logo... plenty of them!) -->
     <link rel="apple-touch-icon" sizes="180x180" href="~/content/icons/apple-touch-icon.png" />
@@ -711,33 +749,9 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Link Share Setup -->
-    <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share"). -->
-    <!-- (more info here: https://ogp.me/) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="@ogTitle" />
-    <meta property="og:determiner" content="The" />
-    <meta property="og:description" content="@ogDescription" />
-    <meta property="og:site_name" content="@ogSite_Name" />
-    <meta property="og:url" content="@ogURL" />
-    <meta property="og:image:url" content="@ogImage" />
-    <meta property="og:image:alt" content="Logo Image" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content=@ogImageWidth />
-    <meta property="og:image:height" content=@ogImageHeight />
-
-    <!-- Twitter Link Share Setup -->
-    <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
-    <meta name="twitter:card" content="photo" />
-    <meta name="twitter:title" content="@ogTitle" />
-    <meta name="twitter:image" content="@ogImage" />
-    <meta name="twitter:image:width" content=@ogImageWidth />
-    <meta name="twitter:image:height" content=@ogImageHeight />
-
-    <!-- Website Setup -->
-    <meta name="description" content="@ogDescription" />
-    <link rel="canonical" href="@canonical" />
+    <!-- Fonts (Lato -  add more fonts here) -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300, 400, 500, 600' rel='stylesheet' type='text/css'>
+    
 
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -783,7 +797,7 @@
         </div>
 
         <div id="maincontainter" class="col-m-6" style="padding: 0; background-color:chocolate;">
-            <div class="container-fluid body-content" style="padding: 0;">
+            <div class="container-fluid" style="padding: 0;">
                 @RenderBody()
             </div>
         </div>
