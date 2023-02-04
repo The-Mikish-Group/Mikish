@@ -600,7 +600,7 @@ button {
 }
 
 #countdownWindowPadding {
-    padding: 0 0 15px 0;
+    padding: 0 0 252px 0;
 }
 
 /* For Tablets */
@@ -729,7 +729,7 @@ button {
     }
 
     #countdownWindowPadding {
-        padding: 0 0 431px 0;
+        padding: 0 0 472px 0;
     }
 }
 
