@@ -4,7 +4,6 @@
     int imageCount = Directory.GetFiles("wwwroot/content/pictures/" + category + "/", "*" + ".jpg").Length;
     string imageLocation = "/Content/Pictures/" + category + "/";
     string imageURL = siteURL + imageLocation;
-    string imageHtmlString = SiteHelpers.ImageHtmlString("wwwroot/content/pictures/" + category + "/");
 }
 
 <div class="container-fluid" style="padding: 0;">
@@ -25,7 +24,7 @@
             <button title="Copy Link to Clipboard" tooltip="Copy this Link" onclick="copyLink()" onmouseout="copyLinkOut()">
                 <img style="width:26px; height:26px;" src="/Content/Svg/Site/Links.svg"> Copy Link
             </button>
-        </div>        
+        </div>
 
         <div class="col-4" id="my-button">
             <button id="Next" title="Next image" style="border-left: none;">
@@ -55,8 +54,7 @@
 
 <!-- Create the Image List -->
 <script>
-    //createImageList("@imageLocation", "x", @imageCount)
-    document.getElementById("CarouselItems").innerHTML = @imageHtmlString;
+    createImageList("@imageLocation", "x", @imageCount)
 </script>
 
 <!-- Keep imageLink updated with current link -->
@@ -76,8 +74,8 @@
         const textToCopy = document.getElementById("imageLink").value;
         document.getElementById("imageLink").hideFocus = true;
         navigator.clipboard.writeText(textToCopy)
-        .then(() => { alert(textToCopy + ` Copied!`) })
-        .catch((error) => { alert(`Copy failed! ${error}`) })
+            .then(() => { alert(textToCopy + ` Copied!`) })
+            .catch((error) => { alert(`Copy failed! ${error}`) })
 
     }
 
