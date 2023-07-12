@@ -144,19 +144,19 @@ namespace Mikish.Classes
                     eventDateString = CalculateDateString(6, 3, 1)[..10];
                     break;
                 case "Memorial":
-                    eventDateString = CalculateDateString(5, 4, 2).Replace("05-24", "05-31")[..10];
+                    eventDateString = CalculateDateString(5, 4, 1).Replace("05-24", "05-31")[..10];
                     break;
                 case "Labor":
-                    eventDateString = CalculateDateString(9, 1, 2)[..10];
+                    eventDateString = CalculateDateString(9, 1, 1)[..10];
                     break;
                 case "Thanksgiving":
-                    eventDateString = CalculateDateString(11, 4, 5)[..10];
+                    eventDateString = CalculateDateString(11, 4, 4)[..10];
                     break;
                 case "MartinLutherKing":
-                    eventDateString = CalculateDateString(1, 3, 2)[..10];
+                    eventDateString = CalculateDateString(1, 3, 1)[..10];
                     break;
                 case "Presidents":
-                    eventDateString = CalculateDateString(2, 3, 2)[..10];
+                    eventDateString = CalculateDateString(2, 3, 1)[..10];
                     break;
 
                 // Easter is calculated 

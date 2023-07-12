@@ -1,0 +1,79 @@
+﻿@{
+    string path = @"D:\Projects\Repos\Mikish\Mikish\wwwroot\Content\Pictures\Sunsets";
+    List<string> imageStrings = new List<string>();
+    try
+    {
+        string[] files = Directory.GetFiles(path);
+        for (int i = 0; i < files.Length; i++)
+        {
+            string modified = files[i].
+            string imageString = "<div class='carousel-item w-100" + (i == 0 ? " active" : "") + "'><img src='" + files[i] + "' alt='Image' /></div>";
+            imageStrings.Add(imageString);
+        }
+    }
+    catch
+    { }
+    string imageHtmlString = string.Join("", imageStrings);
+    //imageHtmlString = imageHtmlString;
+    //string stop = "here";
+}
+
+<div id="CarouselItems"></div>
+
+<script>
+    document.getElementById("CarouselItems").innerHTML = "@imageHtmlString";   
+</script>
+
+
+
+
+@*//string imageStringActive = "";
+    //string imageString = "";
+    //string[] files = Directory.GetFiles(@"D:\Projects\Repos\Mikish\Mikish\wwwroot\Content\Pictures\Sunsets");
+
+    //int count = 0;
+    //foreach (string file in files)
+    //{
+    //    if (count == 0)
+    //    {
+    //        imageStringActive = "<div class='carousel-item w-100' active><img src='" + file + "' alt='Image' /></div>";
+    //        count = 1;
+    //    }
+
+    //    imageString = imageString + "<div class='carousel-item w-100'><img src='" + file + "' alt='Image' /></div>";
+    //}
+    //imageHtmlString = (imageStringActive + imageString);
+
+
+    //}
+    //catch
+    //{
+    //    imageHtmlString = "Nope";
+    //}
+
+   
+
+@*//    List<string> imageStrings = new List<string>();
+//    try
+//    {
+//        string[] files = Directory.GetFiles(@"D:\Projects\Repos\Mikish\Mikish\wwwroot\Content\Pictures\Sunsets");
+//        //string[] files = Directory.GetFiles("/wwwroot/Content/Pictures/Sunsets/");
+
+//        for (int i = 0; i < files.Length; i++)
+//        {
+//            string imageString = "<div class='carousel-item w-100" + (i == 0 ? " active" : "") + "'><img src='" + files[i] + "' alt='Image' /></div>";
+//            imageStrings.Add(imageString);
+//        }
+//    }
+//    catch
+//    { }
+
+//    string imageHtmlString = string.Join("", imageStrings);   
+
+//}
+
+//<div id="CarouselItems"></div>
+
+//<script>
+//    document.getElementById("CarouselItems").innerHTML = "@imageHtmlString";
+//</script>*@

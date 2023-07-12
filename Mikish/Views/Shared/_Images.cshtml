@@ -4,6 +4,7 @@
     int imageCount = Directory.GetFiles("wwwroot/content/pictures/" + category + "/", "*" + ".jpg").Length;
     string imageLocation = "/Content/Pictures/" + category + "/";
     string imageURL = siteURL + imageLocation;
+    string imageHtmlString = SiteHelpers.ImageHtmlString("wwwroot/content/pictures/" + category + "/");
 }
 
 <div class="container-fluid" style="padding: 0;">
@@ -54,7 +55,8 @@
 
 <!-- Create the Image List -->
 <script>
-    createImageList("@imageLocation", "x", @imageCount)
+    //createImageList("@imageLocation", "x", @imageCount)
+    document.getElementById("CarouselItems").innerHTML = @imageHtmlString;
 </script>
 
 <!-- Keep imageLink updated with current link -->
