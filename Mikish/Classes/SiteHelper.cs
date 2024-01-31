@@ -52,7 +52,7 @@
 
         public static string siteEmailSupport()
         {
-            return "mikish@mikish.com";
+            return "mikish.vaughn@gmail.com";
         }
     }
 }
