@@ -138,10 +138,10 @@ namespace Mikish.Classes
 
                 // Calculated based on week and day of month
                 case "Mothers":
-                    eventDateString = CalculateDateString(5, 2, 1)[..10];
+                    eventDateString = CalculateDateString(5, 2, 0)[..10];
                     break;
                 case "Fathers":
-                    eventDateString = CalculateDateString(6, 3, 1)[..10];
+                    eventDateString = CalculateDateString(6, 3, 0)[..10];
                     break;
                 case "Memorial":
                     eventDateString = CalculateDateString(5, 4, 1).Replace("05-24", "05-31")[..10];
@@ -178,17 +178,32 @@ namespace Mikish.Classes
         //
         //   eventMonth = Month of the Event
         //   eventWeek = Week number of Event (ie. Event is in the third week of the month.)
-        //   evenDay = Day of Event. Sunday = 1, Monday = 2,...
+        //   evenDay = Day of Event. Sunday = 0, Monday = 1,...
         public static string CalculateDateString(int eventMonth, int eventWeek, int eventDay)
         {
+            // Determine the event year based on the current date
             int eventYear = DateTime.UtcNow.Month > eventMonth ||
                 (DateTime.UtcNow.Month == eventMonth &&
                 DateTime.UtcNow.Day > eventDay)
                 ? DateTime.UtcNow.Year + 1
                 : DateTime.UtcNow.Year;
-            
-            DateTime eventDate = DateTime.Parse($"{eventYear}/{eventMonth}/{1 + (7 * eventWeek) - (int)DateTime.Parse($"{eventYear}/{eventMonth}/{8 - eventDay}", CultureInfo.InvariantCulture).DayOfWeek}", CultureInfo.InvariantCulture).ToUniversalTime();
 
+            // Get the first day of the month
+            DateTime firstDayOfMonth = new DateTime(eventYear, eventMonth, 1);
+
+            // Calculate the target day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+            int targetDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
+
+            // Calculate the number of days to add to reach the target day of the week
+            int daysToAdd = (eventDay - targetDayOfWeek + 7) % 7;
+
+            // Calculate the number of weeks to add
+            int weeksToAdd = eventWeek - 1;
+
+            // Calculate the event date by adding weeks and days to the first occurrence of the target day of the week
+            DateTime eventDate = firstDayOfMonth.AddDays(daysToAdd + (7 * weeksToAdd)).ToUniversalTime();
+
+            // Format the event date as a string
             string eventDateYear = eventDate.Year.ToString();
             string eventDateDay = eventDate.Day.ToString().PadLeft(2, '0');
             string eventDateMonth = eventDate.Month.ToString().PadLeft(2, '0');
@@ -196,18 +211,19 @@ namespace Mikish.Classes
             return $"{eventDateYear}-{eventDateMonth}-{eventDateDay}";
         }
 
-        // Calculate Easter Date String
         public static string CalculateEasterDateString(int eventYear)
         {
-            int h = ((19 * (eventYear % 19)) + (eventYear / 100) - ((eventYear / 100) / 4) - (((8 * (eventYear / 100)) + 13) / 25) + 15) % 30;
-            int m = ((eventYear % 19) + (11 * h)) / 319;
-            int l = ((2 * ((eventYear / 100) % 4)) + (2 * ((eventYear % 100) / 4)) - ((eventYear % 100) % 4) - h + m + 32) % 7;
+            int goldenNumber = eventYear % 19;
+            int century = eventYear / 100;
+            int h = (century - century / 4 - (8 * century + 13) / 25 + 19 * goldenNumber + 15) % 30;
+            int i = h - h / 28 * (1 - h / 28 * (29 / (h + 1)) * ((21 - goldenNumber) / 11));
+            int j = (eventYear + eventYear / 4 + i + 2 - century + century / 4) % 7;
+            int L = i - j;
+            int month = 3 + (L + 40) / 44;
+            int day = L + 28 - 31 * (month / 4);
 
-            int month = (h - m + l + 90) / 25;
-            int day = (h - m + l + ((h - m + l + 90) / 25) + 19) % 32;
+            return new DateTime(eventYear, month, day, new GregorianCalendar()).ToUniversalTime().ToString("yyyy-MM-dd");
+        }
 
-            return DateTime.Parse(eventYear + "/" + month + "/" + day, CultureInfo.InvariantCulture).ToUniversalTime().ToString();
-        }        
-        
     }
 }
