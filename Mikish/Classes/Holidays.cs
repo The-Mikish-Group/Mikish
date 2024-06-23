@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Diagnostics;
-using System;
+﻿using System;
 using System.Globalization;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Mikish.Classes
 {
@@ -9,221 +7,135 @@ namespace Mikish.Classes
     {
         public static string GetEventUtcDateString(string eventName, int eventYear)
         {
-            string monthAndDay = "";
-
             string eventDateString;
+
             switch (eventName)
             {
                 case "NewYears":
-                    monthAndDay = "-01-01";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 1, 1);
                     break;
-
                 case "Valentines":
-                    monthAndDay = "-02-14";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }                   
+                    eventDateString = CalculateFixedDate(eventYear, 2, 14);
                     break;
-
                 case "Independence":
-                    monthAndDay = "-07-24";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 7, 4);
                     break;
-
                 case "Veterans":
-                    monthAndDay = "-11-11";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 11, 11);
                     break;
-
                 case "Halloween":
-                    monthAndDay = "-10-31";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 10, 31);
                     break;
-
-
                 case "Christmas":
-                    monthAndDay = "-12-25";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 12, 25);
                     break;
-
                 case "Lincoln":
-                    monthAndDay = "-02-12";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 2, 12);
                     break;
-
                 case "Washington":
-                    monthAndDay = "-02-22";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 2, 22);
                     break;
-
                 case "Jefferson":
-                    monthAndDay = "-04-13";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 4, 13);
                     break;
                 case "Army":
-                    monthAndDay = "-06-14";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 6, 14);
                     break;
                 case "AirForce":
-                    monthAndDay = "-09-18";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 9, 18);
                     break;
                 case "Navy":
-                    monthAndDay = "-10-13";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 10, 13);
                     break;
                 case "MarineCorp":
-                    monthAndDay = "-11-10";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 11, 10);
                     break;
                 case "NationalGuard":
-                    monthAndDay = "-12-13";
-                    eventDateString = $"{eventYear}{monthAndDay}";
-                    if (DateTime.Parse(eventDateString) < DateTime.UtcNow)
-                    {
-                        eventDateString = $"{eventYear + 1}{monthAndDay}";
-                    }
+                    eventDateString = CalculateFixedDate(eventYear, 12, 13);
                     break;
-
-                // Calculated based on week and day of month
                 case "Mothers":
-                    eventDateString = CalculateDateString(5, 2, 0)[..10];
+                    eventDateString = CalculateNthWeekdayOfMonth(eventYear, 5, 2, DayOfWeek.Sunday);
                     break;
                 case "Fathers":
-                    eventDateString = CalculateDateString(6, 3, 0)[..10];
+                    eventDateString = CalculateNthWeekdayOfMonth(eventYear, 6, 3, DayOfWeek.Sunday);
                     break;
                 case "Memorial":
-                    eventDateString = CalculateDateString(5, 4, 1).Replace("05-24", "05-31")[..10];
+                    eventDateString = CalculateLastWeekdayOfMonth(eventYear, 5, DayOfWeek.Monday);
                     break;
                 case "Labor":
-                    eventDateString = CalculateDateString(9, 1, 1)[..10];
+                    eventDateString = CalculateNthWeekdayOfMonth(eventYear, 9, 1, DayOfWeek.Monday);
                     break;
                 case "Thanksgiving":
-                    eventDateString = CalculateDateString(11, 4, 4)[..10];
+                    eventDateString = CalculateNthWeekdayOfMonth(eventYear, 11, 4, DayOfWeek.Thursday);
                     break;
                 case "MartinLutherKing":
-                    eventDateString = CalculateDateString(1, 3, 1)[..10];
+                    eventDateString = CalculateNthWeekdayOfMonth(eventYear, 1, 3, DayOfWeek.Monday);
                     break;
                 case "Presidents":
-                    eventDateString = CalculateDateString(2, 3, 1)[..10];
+                    eventDateString = CalculateNthWeekdayOfMonth(eventYear, 2, 3, DayOfWeek.Monday);
                     break;
-
-                // Easter is calculated 
                 case "Easter":
                     eventDateString = CalculateEasterDateString(eventYear);
                     break;
 
-                // Default... shouldn't hit this point unless a Season
+                // Default... okay to break through to Seasons in JS
                 default:
                     eventDateString = $"{eventYear}-03-31";
                     break;
             }
 
-            return eventDateString;
+            DateTime eventDate = DateTime.Parse(eventDateString).ToUniversalTime();
+            if (eventDate < DateTime.UtcNow)
+            {
+                eventDate = eventDate.AddYears(1);
+            }
+
+            return eventDate.ToString("yyyy-MM-dd");
         }
 
-        // Build Date String  (based on Month, Week, and Day of Event with 1 = Sunday)
-        // Handy for events falling on days like the second Tuesday of a Month.
-        //
-        //   eventMonth = Month of the Event
-        //   eventWeek = Week number of Event (ie. Event is in the third week of the month.)
-        //   evenDay = Day of Event. Sunday = 0, Monday = 1,...
-        public static string CalculateDateString(int eventMonth, int eventWeek, int eventDay)
+        private static string CalculateFixedDate(int year, int month, int day)
         {
-            // Determine the event year based on the current date
-            int eventYear = DateTime.UtcNow.Month > eventMonth ||
-                (DateTime.UtcNow.Month == eventMonth &&
-                DateTime.UtcNow.Day > eventDay)
-                ? DateTime.UtcNow.Year + 1
-                : DateTime.UtcNow.Year;
-
-            // Get the first day of the month
-            DateTime firstDayOfMonth = new DateTime(eventYear, eventMonth, 1);
-
-            // Calculate the target day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-            int targetDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
-
-            // Calculate the number of days to add to reach the target day of the week
-            int daysToAdd = (eventDay - targetDayOfWeek + 7) % 7;
-
-            // Calculate the number of weeks to add
-            int weeksToAdd = eventWeek - 1;
-
-            // Calculate the event date by adding weeks and days to the first occurrence of the target day of the week
-            DateTime eventDate = firstDayOfMonth.AddDays(daysToAdd + (7 * weeksToAdd)).ToUniversalTime();
-
-            // Format the event date as a string
-            string eventDateYear = eventDate.Year.ToString();
-            string eventDateDay = eventDate.Day.ToString().PadLeft(2, '0');
-            string eventDateMonth = eventDate.Month.ToString().PadLeft(2, '0');
-
-            return $"{eventDateYear}-{eventDateMonth}-{eventDateDay}";
+            return new DateTime(year, month, day).ToString("yyyy-MM-dd");
         }
 
-        public static string CalculateEasterDateString(int eventYear)
+        private static string CalculateNthWeekdayOfMonth(int year, int month, int n, DayOfWeek dayOfWeek)
         {
-            int goldenNumber = eventYear % 19;
-            int century = eventYear / 100;
+            DateTime firstDayOfMonth = new DateTime(year, month, 1);
+            int firstDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
+            int targetDayOfWeek = (int)dayOfWeek;
+
+            int daysToAdd = (targetDayOfWeek - firstDayOfWeek + 7) % 7;
+            daysToAdd += 7 * (n - 1);
+
+            DateTime nthDayOfWeek = firstDayOfMonth.AddDays(daysToAdd - 1);
+            return nthDayOfWeek.ToString("yyyy-MM-dd");
+        }
+
+        private static string CalculateLastWeekdayOfMonth(int year, int month, DayOfWeek dayOfWeek)
+        {
+            DateTime lastDayOfMonth = new DateTime(year, month, DateTime.DaysInMonth(year, month));
+            int lastDayOfWeek = (int)lastDayOfMonth.DayOfWeek;
+            int targetDayOfWeek = (int)dayOfWeek;
+
+            int daysToSubtract = (lastDayOfWeek - targetDayOfWeek + 7) % 7;
+            DateTime lastDayOfWeekInMonth = lastDayOfMonth.AddDays(-daysToSubtract);
+
+            return lastDayOfWeekInMonth.ToString("yyyy-MM-dd");
+        }
+
+        public static string CalculateEasterDateString(int year)
+        {
+            int goldenNumber = year % 19;
+            int century = year / 100;
             int h = (century - century / 4 - (8 * century + 13) / 25 + 19 * goldenNumber + 15) % 30;
             int i = h - h / 28 * (1 - h / 28 * (29 / (h + 1)) * ((21 - goldenNumber) / 11));
-            int j = (eventYear + eventYear / 4 + i + 2 - century + century / 4) % 7;
-            int L = i - j;
-            int month = 3 + (L + 40) / 44;
-            int day = L + 28 - 31 * (month / 4);
+            int j = (year + year / 4 + i + 2 - century + century / 4) % 7;
+            int l = i - j;
+            int month = 3 + (l + 40) / 44;
+            int day = l + 28 - 31 * (month / 4);
 
-            return new DateTime(eventYear, month, day, new GregorianCalendar()).ToUniversalTime().ToString("yyyy-MM-dd");
+            return new DateTime(year, month, day).ToString("yyyy-MM-dd");
         }
-
     }
 }
+

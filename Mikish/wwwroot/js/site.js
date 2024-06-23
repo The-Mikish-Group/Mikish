@@ -99,14 +99,15 @@ function updateCountdownDisplay(eventDate, eventType) {
 //This function calculates the date of a particular astronomical event (spring, summer, autumn, or winter) given a year.
 //The calculation is based on the Julian date(JDE), which is then converted to the Universal Time Coordinated(UTC) date and
 //finally to the local date.The calculation uses the elliptic motion of the earth and the axial tilt to determine the event date.
-function calcSeasonStartDate(eventYear, eventName) {
 
+function calcSeasonStartDate(eventYear, eventName) {
     var y = (eventYear - 2000) / 1000;
     var y2 = y * y;
     var y3 = y2 * y;
     var y4 = y3 * y;
     var jde;
 
+    // Julian Date calculation for each season
     switch (eventName) {
         case "Spring":
             jde = 2451623.80984 + 365242.37404 * y + 0.05169 * y2 - 0.00411 * y3 - 0.00057 * y4;
@@ -119,77 +120,40 @@ function calcSeasonStartDate(eventYear, eventName) {
             break;
         case "Winter":
             jde = 2451900.05952 + 365242.74049 * y - 0.06223 * y2 - 0.00823 * y3 + 0.00032 * y4;
+            break;
+        default:
+            throw new Error("Invalid event name");
     }
 
-    const a = [
-        485, 203, 199, 182, 156, 136, 77, 74, 70, 58,
-        52, 50, 45, 44, 29, 18, 17, 16, 14, 12, 12, 12,
-        9, 8
-    ];
-    const b = [
-        324.96, 337.23, 342.08, 27.85, 73.14, 171.52,
-        222.54, 296.72, 243.58, 119.81, 297.17, 21.02,
-        247.54, 325.15, 60.93, 155.12, 288.79, 198.04,
-        199.76, 95.39, 287.11, 320.81, 227.73, 15.45
-    ];
-    const c = [
-        1934.136, 32964.467, 20.186, 445267.112, 45036.886,
-        22518.443, 65928.934, 3034.906, 9037.513, 33718.147,
-        150.678, 2281.226, 29929.562, 31555.956, 4443.417,
-        67555.328, 4562.452, 62894.029, 31436.921, 14577.848,
-        31931.756, 34777.259, 1222.114, 16859.074
-    ];
+    // Periodic terms
+    const a = [485, 203, 199, 182, 156, 136, 77, 74, 70, 58, 52, 50, 45, 44, 29, 18, 17, 16, 14, 12, 12, 12, 9, 8];
+    const b = [324.96, 337.23, 342.08, 27.85, 73.14, 171.52, 222.54, 296.72, 243.58, 119.81, 297.17, 21.02, 247.54, 325.15, 60.93, 155.12, 288.79, 198.04, 199.76, 95.39, 287.11, 320.81, 227.73, 15.45];
+    const c = [1934.136, 32964.467, 20.186, 445267.112, 45036.886, 22518.443, 65928.934, 3034.906, 9037.513, 33718.147, 150.678, 2281.226, 29929.562, 31555.956, 4443.417, 67555.328, 4562.452, 62894.029, 31436.921, 14577.848, 31931.756, 34777.259, 1222.114, 16859.074];
 
     var t = (jde - 2451545.0) / 36525;
     var s = 0;
-    var i = 0;
-    while (i < 24) {
+    for (var i = 0; i < a.length; i++) {
         s += a[i] * Math.cos((b[i] * Math.PI) / 180 + ((c[i] * Math.PI) / 180) * t);
-        i += 1;
-    };
+    }
 
+    // Solar anomaly and sun's apparent longitude corrections
     var w = 35999.373 * t - 2.47;
     var sw = 1 + 0.0334 * Math.cos((w * Math.PI) / 180) + 0.0007 * Math.cos(2 * ((w * Math.PI) / 180));
-    var eventJde = jde - 2415019 + 0.5 + (0.00001 * s) / sw;
+    var eventJde = jde + (0.00001 * s) / sw;
 
-    var eventUtcDate = dateFromOADate(eventJde);
-    var eventDate = localFromUTCDate(eventUtcDate);
-
-    return eventDate;
+    // Convert Julian Date to Gregorian Date
+    var eventUtcDate = dateFromJulian(eventJde);
+    return localFromUTCDate(eventUtcDate);
 }
-function dateFromOADate(oaDate) {
 
-    var days = parseInt(oaDate);
-    var ms = Math.abs((oaDate - days) * 8.64e7);
-    var newDate = new Date(1899, 11, 30 + days, 0, 0, 0, ms);
-
-    return newDate;
+function dateFromJulian(jd) {
+    var jdToUnix = (jd - 2440587.5) * 86400000; // Convert Julian Date to Unix timestamp
+    var date = new Date(jdToUnix); // Create date object
+    return date;
 }
+
 function localFromUTCDate(eventDate) {
-
-    var newDate = new Date(
-        eventDate.getTime() + eventDate.getTimezoneOffset() * 60 * 1000
-    );
-    var hours = eventDate.getHours();
-    var offsetTZ = eventDate.getTimezoneOffset() / 60;
-    var offsetDST = getoffsetDST();
-
-    newDate.setHours(hours - offsetTZ + offsetDST);
-
-    return newDate;
-}
-function getTZoffset() {
-
-    var jan = new Date(this.getFullYear(), 0, 1);
-    var jul = new Date(this.getFullYear(), 6, 1);
-
-    return Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
-}
-function getoffsetDST() {
-
-    var jan = new Date(new Date().getFullYear(), 0, 1);
-    var jul = new Date(new Date().getFullYear(), 6, 1);
-    var offsetDST = jan.getTimezoneOffset() < jul.getTimezoneOffset();
-
-    return offsetDST;
+    var offsetTZ = eventDate.getTimezoneOffset() * 60000; // Timezone offset in milliseconds
+    var localTime = eventDate.getTime() - offsetTZ; // Convert to local time
+    return new Date(localTime);
 }
