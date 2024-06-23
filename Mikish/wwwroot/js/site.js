@@ -18,7 +18,6 @@ function createImageList(imageLocation, altText, imageCount) {
     document.getElementById("CarouselItems").innerHTML = text;
 }
 
-
 //***********************************************//
 //  Change background                            //
 //***********************************************//
@@ -37,6 +36,7 @@ function eventCountdown(eventName, eventType, eventDate) {
         countdown(eventName, eventType, eventDate);
     }, 1000);
 }
+
 function countdown(eventName, eventType, eventDate) {
 
     // Overrides Holidays Class and calculates Seasons if Type 1
@@ -70,29 +70,36 @@ function updateCountdownDisplay(eventDate, eventType) {
         document.getElementById("seconds").innerHTML = "";
         document.getElementById("lblseconds").innerHTML = "";
     } else {
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
 
-        let datediff = eventDate - new Date().getTime();
-        const s = Math.floor((datediff % (minute)) / second);
-        const m = Math.floor((datediff % (hour)) / (minute));
-        const h = Math.floor((datediff % (day)) / (hour));
-        const d = Math.floor(datediff / (day));
+        const SECOND = 1000,
+            MINUTE = SECOND * 60,
+            HOUR = MINUTE * 60,
+            DAY = HOUR * 24;
 
-        const timezonestring = Intl.DateTimeFormat().resolvedOptions().timeZone + " " + new Date().toTimeString().slice(9);
-        document.getElementById("timezone").innerHTML = timezonestring;
-        document.getElementById("eventdate").innerHTML = eventType == 0 ? eventDate.toString().substring(0, 16) : eventDate.toLocaleString();
+        const now = new Date().getTime();
+        let datediff = eventDate - now;
 
-        document.getElementById("days").innerHTML = d > 1 ? d : d > 0 ? d : "<br />";
+        const s = Math.floor((datediff % MINUTE) / SECOND);
+        const m = Math.floor((datediff % HOUR) / MINUTE);
+        const h = Math.floor((datediff % DAY) / HOUR);
+        const d = Math.floor(datediff / DAY);
+
+        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const timeString = new Date().toTimeString().slice(9);
+        document.getElementById("timezone").innerHTML = `${timezone} ${timeString}`;
+        document.getElementById("eventdate").innerHTML = eventType == 0
+            ? eventDate.toString().substring(0, 16)
+            : eventDate.toLocaleString();
+
+        document.getElementById("days").innerHTML = d > 0 ? d : "<br />";
         document.getElementById("lbldays").innerHTML = d > 1 ? "Days" : d > 0 ? "Day" : "in";
-        document.getElementById("hours").innerHTML = h > 1 ? h : h > 0 ? h : "";
+        document.getElementById("hours").innerHTML = h > 0 ? h : "";
         document.getElementById("lblhours").innerHTML = h > 1 ? "hours," : h > 0 ? "hour," : "";
-        document.getElementById("minutes").innerHTML = m > 1 ? m : m > 0 ? m : "";
+        document.getElementById("minutes").innerHTML = m > 0 ? m : "";
         document.getElementById("lblminutes").innerHTML = m > 1 ? "minutes, and" : m > 0 ? "minute, and" : "";
-        document.getElementById("seconds").innerHTML = s > 1 ? s : s > 0 ? s : "0";
-        document.getElementById("lblseconds").innerHTML = s > 1 ? "seconds" : s > 0 ? "second" : "seconds";
+        document.getElementById("seconds").innerHTML = s > 0 ? s : "0";
+        document.getElementById("lblseconds").innerHTML = s > 1 ? "seconds" : "second";
+                
     }
 }
 
@@ -123,6 +130,7 @@ function calcSeasonStartDate(eventYear, eventName) {
             break;
         default:
             throw new Error("Invalid event name");
+            // We get here when we have exhausted Hollidays.cs entries and Season entries. They should all be covered before now.
     }
 
     // Periodic terms
