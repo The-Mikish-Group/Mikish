@@ -100,7 +100,7 @@ namespace Mikish.Classes
 
         private static string CalculateNthWeekdayOfMonth(int year, int month, int n, DayOfWeek dayOfWeek)
         {
-            DateTime firstDayOfMonth = new DateTime(year, month, 1);
+            DateTime firstDayOfMonth = new(year, month, 1);
             int firstDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
             int targetDayOfWeek = (int)dayOfWeek;
 
@@ -113,7 +113,7 @@ namespace Mikish.Classes
 
         private static string CalculateLastWeekdayOfMonth(int year, int month, DayOfWeek dayOfWeek)
         {
-            DateTime lastDayOfMonth = new DateTime(year, month, DateTime.DaysInMonth(year, month));
+            DateTime lastDayOfMonth = new(year, month, DateTime.DaysInMonth(year, month));
             int lastDayOfWeek = (int)lastDayOfMonth.DayOfWeek;
             int targetDayOfWeek = (int)dayOfWeek;
 
