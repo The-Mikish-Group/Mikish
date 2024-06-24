@@ -41,7 +41,7 @@ namespace Mikish.Classes
                 eventDateString = GetEventUtcDateString(eventName, eventYear + 1);
             }
 
-            return eventDate.ToString("yyyy-MM-dd");
+            return eventDateString; //eventDate.ToString("yyyy-MM-dd");
         }
 
         private static string CalculateFixedDate(int year, int month, int day) =>
