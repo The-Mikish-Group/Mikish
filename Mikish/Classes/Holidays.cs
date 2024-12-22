@@ -1,11 +1,11 @@
-﻿
-using System;
+﻿using System;
 
 namespace Mikish.Classes
 {
     public static class Holidays
     {
         public static string GetEventUtcDateString(string eventName, int eventYear)
+           
         {
             string eventDateString = eventName switch
             {
@@ -31,7 +31,7 @@ namespace Mikish.Classes
                 "MartinLutherKing" => CalculateNthWeekdayOfMonth(eventYear, 1, 3, DayOfWeek.Monday),
                 "Presidents" => CalculateNthWeekdayOfMonth(eventYear, 2, 3, DayOfWeek.Monday),
                 "Easter" => CalculateEasterDateString(eventYear),
-                _ => $"{eventYear}-03-31"
+                _ => $"{eventYear}-{DateTime.UtcNow.Month:00}-{DateTime.UtcNow.Day:00}" // Correct C# date formatting
             };
 
             DateTime eventDate = DateTime.Parse(eventDateString).ToUniversalTime();
