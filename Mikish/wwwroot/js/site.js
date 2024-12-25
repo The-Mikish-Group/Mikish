@@ -221,7 +221,7 @@ function updateCountdownDisplay(eventDate, eventType) {
     const isEventToday = eventDate.getMonth() === new Date().getMonth() && eventDate.getDate() === new Date().getDate();
 
     if (isEventToday) {
-        /*document.getElementById("eventdate").innerHTML = new Date().toString().substring(0, 16);*/
+        document.getElementById("eventdate").innerHTML = "<br />";
         document.getElementById("days").innerHTML = "<br />";
         document.getElementById("lbldays").innerHTML = "Today!";
         document.getElementById("hours").innerHTML = "<br />";

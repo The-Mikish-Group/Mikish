@@ -31,17 +31,15 @@ namespace Mikish.Classes
                 "MartinLutherKing" => CalculateNthWeekdayOfMonth(eventYear, 1, 3, DayOfWeek.Monday),
                 "Presidents" => CalculateNthWeekdayOfMonth(eventYear, 2, 3, DayOfWeek.Monday),
                 "Easter" => CalculateEasterDateString(eventYear),
-                _ => $"{eventYear}-{DateTime.UtcNow.Month:00}-{DateTime.UtcNow.Day:00}" // Correct C# date formatting
+                _ => $"{DateTime.UtcNow.Year:0000}-{DateTime.UtcNow.Month:00}-{DateTime.UtcNow.Day:00}" // Correct C# date formatting
             };
 
             DateTime eventDate = DateTime.Parse(eventDateString).ToUniversalTime();
-
             if (eventDate < DateTime.UtcNow)
             {
                 eventDateString = GetEventUtcDateString(eventName, eventYear + 1);
             }
-
-            return eventDateString; //eventDate.ToString("yyyy-MM-dd");
+            return eventDateString; //eventDate.ToString("yyyy-MM-dd");            
         }
 
         private static string CalculateFixedDate(int year, int month, int day) =>
